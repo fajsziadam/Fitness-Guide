@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="50dp">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fekvenyomás"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="286dp"
+            android:src="@drawable/my_gif" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="257dp"
+            android:src="@drawable/my_gif" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:padding="10dp"
+            android:text=" 1. Feküdjünk le a padra, és fogjuk meg a rudat! A fogásunk kicsit legyen szélesebb, mint vállszélesség!\n\n
+2. Stabilizáljuk a testünket, majd emeljük ki a rudat!\n\n
+3. Lassan engedjük le a rudat a mellkasunkhoz, amíg hozzá nem ér, és itt állítsuk meg egy másodpercre!\n\n
+4. Nyomjuk ki a rudat miközben kinyújtjuk a karjainkat! Tartsuk meg ezt a pozíciót, mielőtt újabb ismétlést végzünk!\n\n
+5. Figyeljük rá, hogy a talpunk végig a talajon maradjon és a csípőnket ne emeljük el a padról!\n\n
+6. Kezdjük 3 sorozattal, sorozatonként 6-12 ismétléssel!\n\n"
+/>
+
+
+    </LinearLayout>
+</ScrollView>

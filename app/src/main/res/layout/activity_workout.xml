@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hatter"
+    tools:context=".workout.Workout">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp">
+
+            <ImageButton
+                android:id="@+id/btnChest"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/mellizom">
+            </ImageButton>
+
+            <ImageButton
+
+                android:id="@+id/btnShoulder"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/vallak">
+            </ImageButton>
+
+
+            <ImageButton
+                android:id="@+id/btnBiceps"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/biceps">
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/btnTriceps"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/triceps">
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/hatizom">
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/btnAbs"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/hasizom">
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/btnLeg"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/labizom">
+            </ImageButton>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

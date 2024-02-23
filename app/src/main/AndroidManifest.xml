@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FitnessGuide"
+        tools:targetApi="31">
+        <activity
+            android:name=".plan.NoteDeatails"
+            android:exported="false"
+            android:label="Saját edzéstervek"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".plan.OwnPlan"
+            android:exported="false"
+            android:label="Saját edzéstervek"
+            android:theme="@style/Theme.AppCompat.DayNight"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".About"
+            android:exported="false"
+            android:label="Információ"
+            android:parentActivityName=".ChoseTrainingStyle"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".Settings"
+            android:exported="false"
+            android:label="Beállítások"
+            android:parentActivityName=".ChoseTrainingStyle"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".Login"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".workout.WorkoutTriceps"
+            android:exported="false"
+            android:label="Tricepsz gyakorlatok"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".workout.WorkoutShoulder"
+            android:exported="false"
+            android:label="Vállizom gyakorlatok"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".workout.WorkoutLeg"
+            android:exported="false"
+            android:label="Lábizom gyakorlatok"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".workout.WorkoutBiceps"
+            android:exported="false"
+            android:label="Bicepsz gyakorlatok"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".workout.WorkoutBack"
+            android:exported="false"
+            android:label="Hátizom gyakorlatok"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".workout.WorkoutAbs"
+            android:exported="false"
+            android:label="Hasizom gyakorlatok"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".workout.WorkoutChest"
+            android:exported="false"
+            android:label="Mellizom gyakorlatok"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".gym.GymLeg"
+            android:exported="false"
+            android:label="Lábizom gyakorlatok"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".gym.GymAbs"
+            android:exported="false"
+            android:label="Hasizom gyakorlatok"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".gym.GymBack"
+            android:exported="false"
+            android:label="Hátizom gyakorlatok"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".gym.GymTriceps"
+            android:exported="false"
+            android:label="Tricepsz gyakorlatok"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".gym.GymBiceps"
+            android:exported="false"
+            android:label="Bicepsz gyakorlatok"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".gym.GymChest"
+            android:exported="false"
+            android:label="Mellizom gyakorlatok"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".gym.GymShoulder"
+            android:exported="false"
+            android:label="Vállizom gyakorlatok"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".plan.Plan"
+            android:exported="false"
+            android:label="Edzéstervek"
+            android:parentActivityName=".ChoseTrainingStyle"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".workout.Workout"
+            android:exported="false"
+            android:label="Saját testsúlyos edzés"
+            android:parentActivityName=".ChoseTrainingStyle"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".gym.Gym"
+            android:exported="false"
+            android:label="Súlyzós edzés"
+            android:parentActivityName=".ChoseTrainingStyle"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".calorie.CaloriaCalculator"
+            android:exported="false"
+            android:label="Kalória Kalkulátor"
+            android:parentActivityName=".ChoseTrainingStyle"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".ChoseTrainingStyle"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

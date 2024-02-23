@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "357060448315",
+    "project_id": "fitness-guide-d8f34",
+    "storage_bucket": "fitness-guide-d8f34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357060448315:android:a1303f01342667bbe18c1e",
+        "android_client_info": {
+          "package_name": "com.example.fitnessguide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357060448315-hirg9118n1bou7e317gg30m3mbu7m8nq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fitnessguide",
+            "certificate_hash": "77b0021a1a3f9c0a6d84c990f0a5a7ea6b00a96c"
+          }
+        },
+        {
+          "client_id": "357060448315-jn7s20vbjfhlpfefg07647h8perg7cv5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9InWTTQs5Yx_y3lX5F8jdWceg0m4cj54"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357060448315-jn7s20vbjfhlpfefg07647h8perg7cv5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
