@@ -202,7 +202,7 @@ public class ChoseTrainingStyle extends AppCompatActivity {
     }
 
     private void sendEmail() {
-        String email = "1324@freemail.hu";
+        String email = "fajsziadi@gmail.com";
         String subject = "Hiba jelentése";
 
         Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
