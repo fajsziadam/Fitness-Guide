@@ -1,13 +1,9 @@
 package com.example.fitnessguide;
 
-import androidx.activity.result.ActivityResult;
-import androidx.activity.result.ActivityResultCallback;
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
@@ -24,10 +20,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.auth.api.signin.GoogleSignIn;
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
-import com.google.android.gms.auth.api.signin.GoogleSignInClient;
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -35,14 +27,12 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class Login extends AppCompatActivity {
-
     private Button btnLogin;
     private TextView createNewAccount, forgottPassword;
     private ImageView btnGoogle;
     EditText edtTxtEmail,edtTxtPassword;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     ProgressDialog progressDialog;
-
     FirebaseAuth mAuth;
     FirebaseUser mUser;
 
@@ -61,21 +51,12 @@ public class Login extends AppCompatActivity {
         //onclick metódus létrehozása --> Ha megnyomjuk a gombot, akkor végrehajtja a parancsot
         //Intent-el tudjuk egy activityről a másikra átállítani
 
-        btnLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                PerforLogin();
-            }
-        });
+        btnLogin.setOnClickListener(v -> PerforLogin());
 
-        createNewAccount.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        createNewAccount.setOnClickListener(v -> {
                 Intent register = new Intent(Login.this, RegisterActivity.class);
                 startActivity(register);
-            }
         });
-
         forgottPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -154,7 +135,6 @@ public class Login extends AppCompatActivity {
         }
     }
 
-    //Gomb megjelenítése
     private void showButtons() {
 
         btnLogin = findViewById(R.id.btnLogin);

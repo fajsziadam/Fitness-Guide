@@ -12,8 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <GridLayout
 
+        <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:alignmentMode="alignMargins"
@@ -52,6 +52,7 @@
                         android:textSize="18dp" />
 
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -84,7 +85,6 @@
                         android:textColor="@color/black"
                         android:textSize="18dp" />
                 </LinearLayout>
-
 
             </androidx.cardview.widget.CardView>
 
@@ -155,7 +155,7 @@
             </androidx.cardview.widget.CardView>
 
         </GridLayout>
-    </LinearLayout>
 
+    </LinearLayout>
 
 </ScrollView>

@@ -38,15 +38,14 @@
                 android:gravity="center"
                 android:padding="5dp"
                 android:textColor="@color/white"
-                android:textSize="15dp" />
+                android:textSize="18dp" />
             </LinearLayout>
-
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="15dp">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -62,7 +61,6 @@
                     android:layout_height="205dp"
                     android:src="@drawable/edzoterem" />
 
-
                 <Button
                     android:id="@+id/btn5DayGym"
                     android:layout_width="match_parent"
@@ -72,8 +70,8 @@
                     android:drawableRight="@drawable/down_arrow"
                     android:textColor="@color/white"
                     android:gravity="center"
-                    android:background="@drawable/input_bg"/>
-
+                    android:background="@drawable/input_bg"
+                    android:backgroundTint="@color/cardview_dark_background"/>
 
                 <ImageView
                     android:id="@+id/plan5DayGym"
@@ -81,7 +79,6 @@
                     android:layout_height="246dp"
                     android:src="@drawable/gym5napos"
                     android:visibility="gone"/>
-
 
                 <Button
                     android:id="@+id/btn3DayGym"
@@ -91,9 +88,10 @@
                     android:textSize="16dp"
                     android:drawableRight="@drawable/down_arrow"
                     android:textColor="@color/white"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:gravity="center"
-                    android:background="@drawable/input_bg"/>
+                    android:background="@drawable/input_bg"
+                    android:backgroundTint="@color/cardview_dark_background"/>
 
                 <ImageView
                     android:id="@+id/plan2DayGym"
@@ -102,15 +100,13 @@
                     android:src="@drawable/gym5napos"
                     android:visibility="gone"/>
 
-
-
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_marginTop="50dp">
+                android:layout_marginTop="30dp">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -138,7 +134,7 @@
                     android:backgroundTint="@color/cardview_dark_background"
                     android:drawableRight="@drawable/down_arrow"
                     android:gravity="center"
-                    android:background="@drawable/input_bg"/>
+                    android:background="@drawable/input_bg" />
 
                 <ImageView
                     android:id="@+id/planAllDayWorkout"
@@ -155,9 +151,10 @@
                     android:textColor="@color/white"
                     android:textSize="16dp"
                     android:drawableRight="@drawable/down_arrow"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="5dp"
                     android:gravity="center"
-                    android:background="@drawable/input_bg"/>
+                    android:background="@drawable/input_bg"
+                    android:backgroundTint="@color/cardview_dark_background"/>
 
                 <ImageView
                     android:id="@+id/plan2DayWorkout"

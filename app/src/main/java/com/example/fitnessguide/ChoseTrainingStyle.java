@@ -4,16 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -27,14 +23,13 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class ChoseTrainingStyle extends AppCompatActivity {
-
     private FirebaseAuth mAuth;
-    private TextView emailTextview;
-    private String email;
+    TextView emailTextview;
+    String email;
     private Button btnCalorie, btnEdzesterv, btnGymm, Workoutt;
     private ImageView menu;
     private DrawerLayout drawerLayout;
-    private LinearLayout home, workout, gym, plan, calorie, settings, about, logout;
+    private LinearLayout home, workout, gym, plan, calorie, about, logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,122 +50,75 @@ public class ChoseTrainingStyle extends AppCompatActivity {
 
         showButtons();
 
-        btnCalorie.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        btnCalorie.setOnClickListener(v -> {
                 Intent intent = new Intent(ChoseTrainingStyle.this, CaloriaCalculator.class);
                 startActivity(intent);
-            }
         });
 
-        Workoutt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        Workoutt.setOnClickListener(v -> {
                 Intent workout = new Intent(ChoseTrainingStyle.this, Workout.class);
                 startActivity(workout);
-            }
         });
 
-        btnGymm.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        btnGymm.setOnClickListener(v -> {
                 Intent gym = new Intent(ChoseTrainingStyle.this, Gym.class);
                 startActivity(gym);
-            }
         });
 
-        btnEdzesterv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        btnEdzesterv.setOnClickListener(v -> {
                 Intent intent = new Intent(ChoseTrainingStyle.this, Plan.class);
                 startActivity(intent);
-            }
         });
 
+        menu.setOnClickListener(v -> openDrawer(drawerLayout));
 
-        menu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openDrawer(drawerLayout);
-            }
+        home.setOnClickListener(v -> recreate());
+
+        about.setOnClickListener(v -> {
+            Intent intent = new Intent(ChoseTrainingStyle.this, About.class);
+            startActivity(intent);
         });
 
-            home.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    recreate();
-                }
+        workout.setOnClickListener(v -> {
+            Intent intent = new Intent(ChoseTrainingStyle.this, Workout.class);
+            startActivity(intent);
+        });
+
+        gym.setOnClickListener(v -> {
+            Intent intent = new Intent(ChoseTrainingStyle.this, Gym.class);
+            startActivity(intent);
+        });
+
+        plan.setOnClickListener(v -> {
+            Intent intent = new Intent(ChoseTrainingStyle.this, Plan.class);
+            startActivity(intent);
+        });
+
+        calorie.setOnClickListener(v -> {
+            Intent intent = new Intent(ChoseTrainingStyle.this, CaloriaCalculator.class);
+            startActivity(intent);
+        });
+
+        logout.setOnClickListener(v -> {
+            AlertDialog.Builder builder = new AlertDialog.Builder(ChoseTrainingStyle.this);
+            builder.setTitle("Kijelentkezés");
+            builder.setMessage("Biztosan ki szeretne jelentkezni?");
+            builder.setPositiveButton("Igen", (dialog, which) -> {
+                mAuth.getInstance().signOut();
+                Intent intent = new Intent(ChoseTrainingStyle.this, Login.class);
+                startActivity(intent);
+                Toast.makeText(ChoseTrainingStyle.this, "Kijelentkezés sikeres", Toast.LENGTH_SHORT).show();
+                finish();
             });
-
-            settings.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(ChoseTrainingStyle.this, Settings.class);
-                    startActivity(intent);
-                }
+            builder.setNegativeButton("Mégsem", (dialog, which) -> {
             });
-
-            about.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(ChoseTrainingStyle.this, About.class);
-                    startActivity(intent);
-                }
-            });
-
-            workout.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(ChoseTrainingStyle.this, Workout.class);
-                    startActivity(intent);
-                }
-            });
-
-            gym.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(ChoseTrainingStyle.this, Gym.class);
-                    startActivity(intent);
-                }
-            });
-
-            plan.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(ChoseTrainingStyle.this, Plan.class);
-                    startActivity(intent);
-                }
-            });
-
-            calorie.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(ChoseTrainingStyle.this, CaloriaCalculator.class);
-                    startActivity(intent);
-                }
-            });
-
-            logout.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    mAuth.getInstance().signOut();
-                    Intent intent = new Intent(ChoseTrainingStyle.this, Login.class);
-                    startActivity(intent);
-                    Toast.makeText(ChoseTrainingStyle.this, "Kijelentkezés sikeres", Toast.LENGTH_SHORT).show();
-                    finish();
-                }
-            });
-
-        }
-
-    private void showUserProfile(FirebaseUser firebaseUser) {
-        String userID = firebaseUser.getUid();
-
+            AlertDialog dialog = builder.create();
+            dialog.show();
+        });
     }
 
     @Override
     public void onBackPressed() {
-        //super.onBackPressed();
         new AlertDialog.Builder(this)
                 .setTitle("Kilépés")
                 .setMessage("Biztos ki szeretnél lépni?")
@@ -204,7 +152,6 @@ public class ChoseTrainingStyle extends AppCompatActivity {
         gym = findViewById(R.id.gym);
         plan = findViewById(R.id.plan);
         calorie = findViewById(R.id.calorie);
-        settings = findViewById(R.id.settings);
         about = findViewById(R.id.about);
         logout = findViewById(R.id.logout);
 

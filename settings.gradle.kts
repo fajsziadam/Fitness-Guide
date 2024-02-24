@@ -15,4 +15,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "Fitness guide"
 include(":app")
- 

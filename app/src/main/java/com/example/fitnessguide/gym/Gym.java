@@ -4,12 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.ImageButton;
 
-import com.example.fitnessguide.plan.Plan;
 import com.example.fitnessguide.R;
 
 public class Gym extends AppCompatActivity {
@@ -23,64 +20,40 @@ public class Gym extends AppCompatActivity {
 
         showButtons();
 
-        btnChestGym.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent chest = new Intent(Gym.this, GymChest.class);
-                startActivity(chest);
-            }
+        btnChestGym.setOnClickListener( v -> {
+            Intent chest = new Intent(Gym.this, GymChest.class);
+            startActivity(chest);
         });
 
-        btnShoulderGym.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent shoulder = new Intent(Gym.this, GymShoulder.class);
-                startActivity(shoulder);
-            }
+        btnShoulderGym.setOnClickListener( v -> {
+            Intent shoulder = new Intent(Gym.this, GymShoulder.class);
+            startActivity(shoulder);
         });
-
-        btnBicepsGym.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        btnBicepsGym.setOnClickListener(v -> {
                 Intent biceps = new Intent(Gym.this, GymBiceps.class);
                 startActivity(biceps);
-            }
         });
 
-        btnTricepsGym.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        btnTricepsGym.setOnClickListener( v -> {
                 Intent triceps = new Intent(Gym.this, GymTriceps.class);
                 startActivity(triceps);
-            }
         });
 
-        btnBackGym.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        btnBackGym.setOnClickListener(v -> {
                 Intent back = new Intent(Gym.this, GymBack.class);
                 startActivity(back);
-            }
         });
 
-        btnAbsGym.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        btnAbsGym.setOnClickListener(v -> {
                 Intent abs = new Intent(Gym.this, GymAbs.class);
                 startActivity(abs);
-            }
         });
 
-        btnLegGym.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        btnLegGym.setOnClickListener(v -> {
                 Intent leg = new Intent(Gym.this, GymLeg.class);
                 startActivity(leg);
-            }
         });
-
     }
-
     private void showButtons() {
 
         btnChestGym = findViewById(R.id.btnChestGym);
@@ -90,9 +63,5 @@ public class Gym extends AppCompatActivity {
         btnBackGym = findViewById(R.id.btnBackGym);
         btnAbsGym = findViewById(R.id.btnAbsGym);
         btnLegGym = findViewById(R.id.btnLegGym);
-
     }
-
-
-
 }

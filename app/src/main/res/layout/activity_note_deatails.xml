@@ -107,12 +107,13 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/delete_note_text_view_btn"
-        android:text="Delete note"
+        android:id="@+id/deletePlanTextViewBtn"
+        android:text="Edzésterv törlése"
         android:layout_alignParentBottom="true"
+        android:visibility="gone"
         android:gravity="center"
         android:textSize="18sp"
-        android:visibility="gone"
+
         android:textColor="#FF0000"/>
 
 

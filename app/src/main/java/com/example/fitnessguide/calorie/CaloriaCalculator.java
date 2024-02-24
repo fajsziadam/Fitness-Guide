@@ -13,53 +13,43 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.example.fitnessguide.R;
-import com.google.android.material.snackbar.Snackbar;
 
 public class CaloriaCalculator extends AppCompatActivity {
-
     private Button btnCalculate, btnReset;
     private RadioGroup rgActivity, rgGender, rgGoal;
     private RadioButton rb0, rb12, rb35, rb67, rbMale, rbFemale, rbLess, rbSame, rbMore;
     private EditText edtTxtAge, edtTxtHeight, edtTxtWeight;
     private TextView txtWarnAge, txtWarnHeight, txtWarnWeight,txtWarnGender , txtWarnActivity, txtWarnGoal, txtShow,txtKeplet;
 
-    private ConstraintLayout parent;
+    ConstraintLayout parent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_caloria_calculator);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         initViews();
 
-        btnCalculate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Calculate();
-            }
+        btnCalculate.setOnClickListener(v -> Calculate());
+
+        btnReset.setOnClickListener(v -> {
+            edtTxtAge.setText("");
+            edtTxtHeight.setText("");
+            edtTxtWeight.setText("");
+            txtShow.setText("");
+            rgGender.clearCheck();
+            rgActivity.clearCheck();
+            rgGoal.clearCheck();
+            txtWarnAge.setVisibility(View.GONE);
+            txtWarnHeight.setVisibility(View.GONE);
+            txtWarnWeight.setVisibility(View.GONE);
+            txtWarnGender.setVisibility(View.GONE);
+            txtWarnActivity.setVisibility(View.GONE);
+            txtWarnGoal.setVisibility(View.GONE);
+            txtKeplet.setVisibility(View.GONE);
         });
 
-        btnReset.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                edtTxtAge.setText("");
-                edtTxtHeight.setText("");
-                edtTxtWeight.setText("");
-                txtShow.setText("");
-                rgGender.clearCheck();
-                rgActivity.clearCheck();
-                rgGoal.clearCheck();
-                txtWarnAge.setVisibility(View.GONE);
-                txtWarnHeight.setVisibility(View.GONE);
-                txtWarnWeight.setVisibility(View.GONE);
-                txtWarnGender.setVisibility(View.GONE);
-                txtWarnActivity.setVisibility(View.GONE);
-                txtWarnGoal.setVisibility(View.GONE);
-                txtKeplet.setVisibility(View.GONE);
-
-            }
-        });
     }
 
     private void Calculate(){
@@ -69,7 +59,7 @@ public class CaloriaCalculator extends AppCompatActivity {
         int heightValue = Integer.parseInt(edtTxtHeight.getText().toString());
         int weightValue = Integer.parseInt(edtTxtWeight.getText().toString());
 
-        double Calories = 0;
+        double Calories;
 
         if(rgGender.getCheckedRadioButtonId() == rbMale.getId()){
             // If user is "Male" then the following formula will be used to calculate the calories
@@ -186,7 +176,6 @@ public class CaloriaCalculator extends AppCompatActivity {
     }
 
     private boolean validateData(){
-        //Log.d(TAG,"ValidateData: started");
         if (edtTxtAge.getText().toString().equals("")){
             txtWarnAge.setVisibility(View.VISIBLE);
             txtWarnAge.setText("Kérlek add meg az életkorod");
@@ -202,7 +191,7 @@ public class CaloriaCalculator extends AppCompatActivity {
             return false;
         }else {
             txtWarnHeight.setVisibility(View.GONE);
-            txtWarnHeight.setText(""); // Hibaüzenet eltüntetése, ha nincs hiba
+            txtWarnHeight.setText("");
         }
 
         if (edtTxtWeight.getText().toString().equals("")){
@@ -211,7 +200,7 @@ public class CaloriaCalculator extends AppCompatActivity {
             return false;
         }else {
             txtWarnWeight.setVisibility(View.GONE);
-            txtWarnWeight.setText(""); // Hibaüzenet eltüntetése, ha nincs hiba
+            txtWarnWeight.setText("");
         }
 
         if (rgActivity.getCheckedRadioButtonId() == -1){
@@ -220,7 +209,7 @@ public class CaloriaCalculator extends AppCompatActivity {
             return false;
         }else {
             txtWarnActivity.setVisibility(View.GONE);
-            txtWarnActivity.setText(""); // Hibaüzenet eltüntetése, ha nincs hiba
+            txtWarnActivity.setText("");
         }
 
         if (rgGender.getCheckedRadioButtonId() == -1) {
@@ -229,7 +218,7 @@ public class CaloriaCalculator extends AppCompatActivity {
             return false;
         }else {
             txtWarnGender.setVisibility(View.GONE);
-            txtWarnGender.setText(""); // Hibaüzenet eltüntetése, ha nincs hiba
+            txtWarnGender.setText("");
         }
 
         if (rgGoal.getCheckedRadioButtonId() == -1){
@@ -238,7 +227,7 @@ public class CaloriaCalculator extends AppCompatActivity {
             return false;
         }else {
             txtWarnGoal.setVisibility(View.GONE);
-            txtWarnGoal.setText(""); // Hibaüzenet eltüntetése, ha nincs hiba
+            txtWarnGoal.setText("");
         }
 
         return true;

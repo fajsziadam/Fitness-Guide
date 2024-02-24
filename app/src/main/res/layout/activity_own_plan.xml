@@ -14,7 +14,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/page_title"
-            android:text="Notes"
+            android:text="Saját edzéstervek"
             android:textSize="32sp"
             android:textColor="@color/white"
             android:textStyle="bold"/>
@@ -23,7 +23,6 @@
             android:layout_width="36dp"
             android:layout_height="36dp"
             android:id="@+id/menuBtn"
-            android:src="@drawable/baseline_menu_24"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             app:tint="@color/white"
@@ -56,10 +55,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.9" />
 
-
-
-
 </RelativeLayout>
-
-
-

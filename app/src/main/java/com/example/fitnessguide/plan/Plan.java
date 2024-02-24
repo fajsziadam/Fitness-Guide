@@ -1,11 +1,8 @@
 package com.example.fitnessguide.plan;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -40,41 +37,19 @@ public class Plan extends AppCompatActivity {
         ownPlan = findViewById(R.id.ownPlan);
 
 
-        btn3DayGym.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                is_visible(plan3DayGym);
-            }
+        //Gym plans:
+        btn3DayGym.setOnClickListener(v -> is_visible(plan3DayGym));
+        btn5DayGym.setOnClickListener(v -> is_visible(plan5DayGym));
+
+        //Workout plans:
+        btn2DayWorkout.setOnClickListener(v -> is_visible(plan2DayWorkout));
+        btnAllDayWorkout.setOnClickListener(v -> is_visible(planAllDayWorkout));
+
+        ownPlan.setOnClickListener(v -> {
+            Intent intent = new Intent(Plan.this, OwnPlan.class);
+            startActivity(intent);
         });
 
-        btn5DayGym.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                is_visible(plan5DayGym);
-            }
-        });
-
-        btn2DayWorkout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                is_visible(plan2DayWorkout);
-            }
-        });
-
-        btnAllDayWorkout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                is_visible(planAllDayWorkout);
-            }
-        });
-
-        ownPlan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Plan.this, OwnPlan.class);
-                startActivity(intent);
-            }
-        });
     }
 
     public void is_visible(View a) {

@@ -6,11 +6,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,16 +19,13 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class RegisterActivity extends AppCompatActivity {
-
     TextView alreadyHaveAccount;
     Button btnRegister;
     EditText edtTxtEmail,edtTxtPassword,edtTxtPassword2;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     ProgressDialog progressDialog;
-
     FirebaseAuth mAuth;
     FirebaseUser mUser;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,19 +39,9 @@ public class RegisterActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         mUser = mAuth.getCurrentUser();
 
-        alreadyHaveAccount.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-            }
-        });
+        alreadyHaveAccount.setOnClickListener(v -> onBackPressed());
 
-        btnRegister.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                PerforAuth();
-            }
-        });
+        btnRegister.setOnClickListener(v -> PerforAuth());
 
     }
 
@@ -92,8 +77,6 @@ public class RegisterActivity extends AppCompatActivity {
                 }
             });
         }
-
-
     }
 
     private void showButtons() {
@@ -103,7 +86,6 @@ public class RegisterActivity extends AppCompatActivity {
         edtTxtEmail = findViewById(R.id.edtTxtEmail);
         edtTxtPassword = findViewById(R.id.edtTxtPassword);
         edtTxtPassword2 = findViewById(R.id.edtTxtPassword2);
-
 
     }
 

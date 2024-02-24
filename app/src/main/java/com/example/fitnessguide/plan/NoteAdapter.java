@@ -34,7 +34,7 @@ public class NoteAdapter extends FirestoreRecyclerAdapter<Note,
 
             intent.putExtra("title", note.title);
             intent.putExtra("muscle", note.muscle);
-            intent.putExtra("excercise", note.excercises);
+            intent.putExtra("excercises", note.excercises);
             intent.putExtra("repeate", note.repeate);
 
             String docId = this.getSnapshots().getSnapshot(position).getId();
@@ -50,7 +50,7 @@ public class NoteAdapter extends FirestoreRecyclerAdapter<Note,
         return new NoteViewHolder(view);
     }
 
-    class NoteViewHolder extends RecyclerView.ViewHolder{
+    static class NoteViewHolder extends RecyclerView.ViewHolder{
 
         TextView  titleTextView,muscleTextView ,timestampTextView ;
 

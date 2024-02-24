@@ -28,12 +28,12 @@ public class Note {
         this.muscle = muscle;
     }
 
-    public String getContent() {
+    public String getExcercises() {
         return excercises;
     }
 
-    public void setContent(String content) {
-        this.excercises = content;
+    public void setExcercises(String excercises) {
+        this.excercises = excercises;
     }
 
     public String getRepeate() {

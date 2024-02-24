@@ -4,13 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.ImageButton;
 
 import com.example.fitnessguide.R;
-import com.example.fitnessguide.plan.Plan;
 
 public class Workout extends AppCompatActivity {
     private ImageButton btnChest, btnShoulder, btnBiceps, btnTriceps, btnBack, btnAbs, btnLeg;
@@ -23,62 +20,39 @@ public class Workout extends AppCompatActivity {
 
         showButtons();
 
-        btnChest.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        btnChest.setOnClickListener(v -> {
                 Intent chest = new Intent(Workout.this, WorkoutChest.class);
                 startActivity(chest);
-            }
         });
-
-        btnShoulder.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        btnShoulder.setOnClickListener(v -> {
                 Intent shoulder = new Intent(Workout.this, WorkoutShoulder.class);
                 startActivity(shoulder);
-            }
         });
 
-        btnBiceps.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        btnBiceps.setOnClickListener(v -> {
                 Intent biceps = new Intent(Workout.this, WorkoutBiceps.class);
                 startActivity(biceps);
-            }
         });
 
-        btnTriceps.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        btnTriceps.setOnClickListener(v -> {
                 Intent triceps = new Intent(Workout.this, WorkoutTriceps.class);
                 startActivity(triceps);
-            }
         });
 
-        btnBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        btnBack.setOnClickListener(v -> {
                 Intent back = new Intent(Workout.this, WorkoutBack.class);
                 startActivity(back);
-            }
         });
 
-        btnAbs.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        btnAbs.setOnClickListener(v -> {
                 Intent abs = new Intent(Workout.this, WorkoutAbs.class);
                 startActivity(abs);
-            }
         });
 
-        btnLeg.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        btnLeg.setOnClickListener(v -> {
                 Intent leg = new Intent(Workout.this, WorkoutLeg.class);
                 startActivity(leg);
-            }
         });
-
     }
 
     private void showButtons() {
@@ -90,11 +64,5 @@ public class Workout extends AppCompatActivity {
         btnBack = findViewById(R.id.btnBack);
         btnAbs = findViewById(R.id.btnAbs);
         btnLeg = findViewById(R.id.btnLeg);
-
-
-
     }
-
-
-
 }

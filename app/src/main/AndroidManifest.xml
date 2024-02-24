@@ -15,26 +15,17 @@
         <activity
             android:name=".plan.NoteDeatails"
             android:exported="false"
-            android:label="Saját edzéstervek"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.DayNight" />
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
             android:name=".plan.OwnPlan"
             android:exported="false"
-            android:label="Saját edzéstervek"
-            android:theme="@style/Theme.AppCompat.DayNight"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".About"
             android:exported="false"
             android:label="Információ"
-            android:parentActivityName=".ChoseTrainingStyle"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.DayNight" />
-        <activity
-            android:name=".Settings"
-            android:exported="false"
-            android:label="Beállítások"
             android:parentActivityName=".ChoseTrainingStyle"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.DayNight" />
