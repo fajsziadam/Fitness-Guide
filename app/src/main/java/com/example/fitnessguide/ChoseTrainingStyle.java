@@ -7,6 +7,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -101,6 +102,13 @@ public class ChoseTrainingStyle extends AppCompatActivity {
             Intent intent = new Intent(ChoseTrainingStyle.this, CaloriaCalculator.class);
             startActivity(intent);
         });
+        contactus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendEmail(); // Függvény hívása az e-mail küldéshez
+            }
+        });
+
 
         rateus.setOnClickListener(v -> {
             AlertDialog.Builder builder = new AlertDialog.Builder(ChoseTrainingStyle.this);
@@ -191,6 +199,20 @@ public class ChoseTrainingStyle extends AppCompatActivity {
         if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START);
         }
+    }
+
+    private void sendEmail() {
+        String email = "1324@freemail.hu";
+        String subject = "Hiba jelentése";
+
+        Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+        emailIntent.setData(Uri.parse("mailto:"));
+        emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{email});
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, subject);
+        emailIntent.putExtra(Intent.EXTRA_TEXT, "");
+
+        startActivity(Intent.createChooser(emailIntent,"Choose an email client"));
+
     }
 
     @Override

@@ -1,11 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".About">
+    android:padding="20dp">
 
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Üdvözlünk a Fitness Guide alkalmazásban!"
+        android:textSize="28dp"
+        android:textStyle="bold" />
 
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeTextView"
+        android:layout_marginTop="40dp"
+        android:text="A Fitness Guide egy egyszerűen használható alkalmazás, amivel könnyedén megtervezheted az edzéseid, valamint segítséget nyújt az egészséges életmód kialakításához. Az alkalmazás számos funkciót kínál, hogy segítsen elérni fitneszcéljaidat."
+        android:textSize="16sp" />
 
-</androidx.drawerlayout.widget.DrawerLayout>
+    <TextView
+        android:id="@+id/workoutTypesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionTextView"
+        android:layout_marginTop="16dp"
+        android:text="Az alkalmazásban két fő edzéstípus között választhatsz: sajáttestsúlyos és súlyzós edzések. Ezek a változatos edzésmódszerek lehetővé teszik számodra, hogy testalkatodnak és preferenciáidnak megfelelően alakítsd ki az edzéstervet."
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/workoutPlansTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/workoutTypesTextView"
+        android:layout_marginTop="16dp"
+        android:text="Emellett a Fitness Guide rendelkezik előre összeállított edzéstervekkel is, amelyek segítenek a célok elérésében és a motiváció fenntartásában. Valamint saját edzésterveket is létre tudsz hozni, amit könnyedén lehet módosítani és törölni."
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/nutritionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/workoutPlansTextView"
+        android:layout_marginTop="16dp"
+        android:text="Nem csak az edzés fontos az egészséges életmód szempontjából, hanem az egészséges táplálkozás is. Az alkalmazásban található kalóriaszámológép segítségével könnyedén kiszámolhatod napi kalóriaszükségletedet, hogy még hatékonyabban tudd tervezni étrendedet."
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/startJourneyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nutritionTextView"
+        android:layout_marginTop="16dp"
+        android:text="Indulj el az úton a jobb fizikai és mentális egészség felé a Fitness Guide alkalmazással!"
+        android:textSize="16sp" />
+
+</RelativeLayout>
