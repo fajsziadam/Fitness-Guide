@@ -8,10 +8,12 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,7 +31,8 @@ public class ChoseTrainingStyle extends AppCompatActivity {
     private Button btnCalorie, btnEdzesterv, btnGymm, Workoutt;
     private ImageView menu;
     private DrawerLayout drawerLayout;
-    private LinearLayout home, workout, gym, plan, calorie, about, logout;
+    LinearLayout home, workout, gym, plan, calorie, about, logout, rateus, contactus;
+    RatingBar ratingBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,9 +44,9 @@ public class ChoseTrainingStyle extends AppCompatActivity {
         FirebaseUser firebaseUser = mAuth.getCurrentUser();
         emailTextview = findViewById(R.id.emailTextview);
 
-        if (firebaseUser == null){
+        if (firebaseUser == null) {
             Toast.makeText(this, "Hiba történt! Felhasználó adatai nem érhető el", Toast.LENGTH_SHORT).show();
-        }else {
+        } else {
             email = firebaseUser.getEmail();
             emailTextview.setText(email);
         }
@@ -51,23 +54,23 @@ public class ChoseTrainingStyle extends AppCompatActivity {
         showButtons();
 
         btnCalorie.setOnClickListener(v -> {
-                Intent intent = new Intent(ChoseTrainingStyle.this, CaloriaCalculator.class);
-                startActivity(intent);
+            Intent intent = new Intent(ChoseTrainingStyle.this, CaloriaCalculator.class);
+            startActivity(intent);
         });
 
         Workoutt.setOnClickListener(v -> {
-                Intent workout = new Intent(ChoseTrainingStyle.this, Workout.class);
-                startActivity(workout);
+            Intent workout = new Intent(ChoseTrainingStyle.this, Workout.class);
+            startActivity(workout);
         });
 
         btnGymm.setOnClickListener(v -> {
-                Intent gym = new Intent(ChoseTrainingStyle.this, Gym.class);
-                startActivity(gym);
+            Intent gym = new Intent(ChoseTrainingStyle.this, Gym.class);
+            startActivity(gym);
         });
 
         btnEdzesterv.setOnClickListener(v -> {
-                Intent intent = new Intent(ChoseTrainingStyle.this, Plan.class);
-                startActivity(intent);
+            Intent intent = new Intent(ChoseTrainingStyle.this, Plan.class);
+            startActivity(intent);
         });
 
         menu.setOnClickListener(v -> openDrawer(drawerLayout));
@@ -97,6 +100,25 @@ public class ChoseTrainingStyle extends AppCompatActivity {
         calorie.setOnClickListener(v -> {
             Intent intent = new Intent(ChoseTrainingStyle.this, CaloriaCalculator.class);
             startActivity(intent);
+        });
+
+        rateus.setOnClickListener(v -> {
+            AlertDialog.Builder builder = new AlertDialog.Builder(ChoseTrainingStyle.this);
+            View dialogView = getLayoutInflater().inflate(R.layout.dialog_rateus, null);
+            RatingBar ratingBar = dialogView.findViewById(R.id.ratingBar);
+            Button rateBtn = dialogView.findViewById(R.id.rateBtn);
+
+            builder.setView(dialogView);
+            AlertDialog dialog = builder.create();
+
+            rateBtn.setOnClickListener(vv -> {
+                float rating = ratingBar.getRating();
+                String message = "Értékelésed: " + rating + "/5.\nKöszönjük az értékelésed!";
+                Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+                dialog.dismiss();
+            });
+
+            dialog.show();
         });
 
         logout.setOnClickListener(v -> {
@@ -154,15 +176,21 @@ public class ChoseTrainingStyle extends AppCompatActivity {
         calorie = findViewById(R.id.calorie);
         about = findViewById(R.id.about);
         logout = findViewById(R.id.logout);
+        contactus = findViewById(R.id.contactus);
+        rateus = findViewById(R.id.rateus);
+
+        ratingBar = findViewById(R.id.ratingBar);
 
     }
-    public static void openDrawer(DrawerLayout drawerLayout){
+
+    public static void openDrawer(DrawerLayout drawerLayout) {
         drawerLayout.openDrawer(GravityCompat.START);
+    }
+
+    public static void closeDrawer(DrawerLayout drawerLayout) {
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+            drawerLayout.closeDrawer(GravityCompat.START);
         }
-        public static void closeDrawer(DrawerLayout drawerLayout){
-            if (drawerLayout.isDrawerOpen(GravityCompat.START)){
-                drawerLayout.closeDrawer(GravityCompat.START);
-            }
     }
 
     @Override

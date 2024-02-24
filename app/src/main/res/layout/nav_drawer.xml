@@ -157,7 +157,6 @@
             android:drawableLeft="@drawable/baseline_info_24"
             android:drawablePadding="8dp"/>
 
-
     </LinearLayout>
 
     
@@ -166,13 +165,50 @@
         android:layout_height="1dp"
         android:layout_marginTop="12dp"/>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rateus"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Értékeljen minket!"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/like"
+            android:drawablePadding="8dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contactus"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Vegyfelvelünk a kapcsolatot"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:drawablePadding="8dp"/>
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/logout"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="120dp"
         android:orientation="horizontal">
 
         <TextView
