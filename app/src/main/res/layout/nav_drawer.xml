@@ -196,7 +196,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            android:text="Vegyfelvelünk a kapcsolatot"
+            android:text="Vegye fel velünk a kapcsolatot!"
             android:textSize="20sp"
             android:drawableLeft="@drawable/baseline_email_24"
             android:drawablePadding="8dp"/>
