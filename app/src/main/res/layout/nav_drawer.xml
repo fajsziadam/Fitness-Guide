@@ -11,7 +11,7 @@
         android:orientation="vertical"
         android:gravity="center_vertical"
         android:padding="10dp"
-        android:background="@drawable/navdrawerbackground"
+        android:background="@drawable/menu_hatter"
         android:theme="@style/Theme.AppCompat.DayNight">
 
         <ImageView

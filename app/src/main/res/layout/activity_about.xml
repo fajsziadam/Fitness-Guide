@@ -1,7 +1,11 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/welcomeTextView"
@@ -59,4 +63,38 @@
         android:text="Indulj el az úton a jobb fizikai és mentális egészség felé a Fitness Guide alkalmazással!"
         android:textSize="16sp" />
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/reference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startJourneyTextView"
+        android:layout_marginTop="16dp"
+        android:text="Az alkalmazásban használt képek hivatkozásai:"
+        android:textStyle="bold"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/references"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reference"
+        android:layout_marginTop="16dp"
+        android:autoLink="web"
+        android:text="
+https://www.freepik.com/free-photo/3d-grunge-brick-interior-with-spotlight-shining-down_31423575.htm -kjpargeter - Freepik.com - Háttér \n
+https://www.pexels.com/hu-hu/foto/fekete-feher-ferfi-szemely-sport-1431282/ -anush gorak - mellizom \n
+https://www.freepik.com/free-photo/muscular-young-man-showing-perfect-biceps_26671203.htm - ArtPhoto_studio - Freepik.com – hátizom \n
+https://www.freepik.com/free-photo/attractive-male-bodybuilder_8821622.htm - master1305 - Freepik.com – vállizom \n
+https://www.freepik.com/free-photo/athletic-shirtless-young-male-fitness-model-holds-dumbbell-with-light-isolated-dark-background_24101555.htm -fxquadro - Freepik.com – bicepsz \n
+https://www.freepik.com/free-photo/attractive-shirtless-bodybuilder-is-posing-with-rubber-showing-his-muscules_29244304.htm -fxquadro - Freepik.com – tricepsz \n
+https://www.freepik.com/free-photo/sportive-man-s-body-dark-wall_7515304.htm -cookie_studio - Freepik.com – hasizom \n
+https://www.freepik.com/free-photo/man-with-naked-torso-holds-barbell-grey-wall_26220182.htm -fxquadro - Freepik.com- Freepik.com – láb \n
+https://www.freepik.com/free-photo/young-powerful-sportsman-training-push-ups-dark-wall_7515338.htm -cookie_studio - Freepik.com - saját testsúlyos edzésterv \n
+https://www.freepik.com/free-photo/young-man-sportswear-exercise-class-gym_4833325.htm -jcomp - Freepik.com -súlyzós edzésterv \n
+https://www.freepik.com/free-photo/exercise-weights-iron-dumbbell-with-extra-plates_1203207.htm -snowing - Freepik.com -menu háttér
+"
+        android:textSize="16dp" />
+
+    </RelativeLayout>
+
+</ScrollView>

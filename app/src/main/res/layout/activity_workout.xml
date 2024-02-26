@@ -19,7 +19,7 @@
             <ImageButton
                 android:id="@+id/btnChest"
                 android:layout_width="match_parent"
-                android:layout_height="165dp"
+                android:layout_height="150dp"
                 android:layout_marginBottom="50dp"
                 android:background="@drawable/mellizom">
             </ImageButton>
@@ -27,7 +27,7 @@
             <ImageButton
                 android:id="@+id/btnShoulder"
                 android:layout_width="match_parent"
-                android:layout_height="175dp"
+                android:layout_height="150dp"
                 android:layout_marginBottom="50dp"
                 android:background="@drawable/vallak">
             </ImageButton>
@@ -36,7 +36,7 @@
             <ImageButton
                 android:id="@+id/btnBiceps"
                 android:layout_width="match_parent"
-                android:layout_height="165dp"
+                android:layout_height="150dp"
                 android:layout_marginBottom="50dp"
                 android:background="@drawable/biceps">
             </ImageButton>
@@ -44,7 +44,7 @@
             <ImageButton
                 android:id="@+id/btnTriceps"
                 android:layout_width="match_parent"
-                android:layout_height="170dp"
+                android:layout_height="150dp"
                 android:layout_marginBottom="50dp"
                 android:background="@drawable/triceps">
             </ImageButton>
@@ -52,15 +52,15 @@
             <ImageButton
                 android:id="@+id/btnBack"
                 android:layout_width="match_parent"
-                android:layout_height="160dp"
+                android:layout_height="150dp"
                 android:layout_marginBottom="50dp"
-                android:background="@drawable/hatizom">
+                android:background="@drawable/hat">
             </ImageButton>
 
             <ImageButton
                 android:id="@+id/btnAbs"
                 android:layout_width="match_parent"
-                android:layout_height="160dp"
+                android:layout_height="150dp"
                 android:layout_marginBottom="50dp"
                 android:background="@drawable/hasizom">
             </ImageButton>
@@ -68,7 +68,7 @@
             <ImageButton
                 android:id="@+id/btnLeg"
                 android:layout_width="match_parent"
-                android:layout_height="160dp"
+                android:layout_height="150dp"
                 android:layout_marginBottom="50dp"
                 android:background="@drawable/labizom">
             </ImageButton>
