@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vállvonogatás"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="286dp"
+            android:src="@drawable/my_gif" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gymback_vallvonogatas" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="50dp"
+            android:text="1. Vegyél mindekét kezedbe 1-1 súlyzót. Állj egyenes háttal, kis terpeszben, lábaid körülbelül vállszélességben legyenek egymástól, karjaid lógjanak a tested mellett. Tartsd a súlyzót magad előtt leengedve, tenyerek a test felé nézzenek.
+\n\n2. Belégzés közben emeld fel a válladat a füled felé, amennyire tudod. A mozgást lassan végezd.
+\n\n3. Engedd le a vállaid a kiindulási helyzetbe.
+\n\n4. Hajtsd végre a gyakorlatot 8-12 ismétlésszámmal.
+
+"
+            />
+
+
+    </LinearLayout>
+</ScrollView>
