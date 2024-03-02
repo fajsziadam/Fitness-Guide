@@ -32,7 +32,6 @@
                 android:background="@drawable/vallak">
             </ImageButton>
 
-
             <ImageButton
                 android:id="@+id/btnBiceps"
                 android:layout_width="match_parent"

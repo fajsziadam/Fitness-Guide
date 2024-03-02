@@ -23,20 +23,20 @@ public class GymLeg extends AppCompatActivity {
         showButtons();
 
         leg1.setOnClickListener(v -> {
-                setContentView(R.layout.gym_leg1);
-                currentLayoutId = R.layout.gym_leg1;
+                setContentView(R.layout.gym_guggolas);
+                currentLayoutId = R.layout.gym_guggolas;
         });
         leg2.setOnClickListener(v -> {
-                setContentView(R.layout.gym_leg2);
-                currentLayoutId = R.layout.gym_leg2;
+                setContentView(R.layout.gym_leg_labtolas);
+                currentLayoutId = R.layout.gym_leg_labtolas;
         });
         leg3.setOnClickListener(v -> {
-                setContentView(R.layout.gym_leg3);
-                currentLayoutId = R.layout.gym_leg3;
+                setContentView(R.layout.gym_leg_nyujtas);
+                currentLayoutId = R.layout.gym_leg_nyujtas;
         });
         leg4.setOnClickListener(v -> {
-                setContentView(R.layout.gym_leg4);
-                currentLayoutId = R.layout.gym_leg4 ;
+                setContentView(R.layout.gym_leg_vadli);
+                currentLayoutId = R.layout.gym_leg_vadli;
         });
 
     }

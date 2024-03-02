@@ -39,16 +39,17 @@
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/sulyzo"/>
+                        android:layout_width="135dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/my_gif"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:text="Abs1"
-                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:text="Felülés súlyzóval"
+                        android:textColor="@color/white"
                         android:textSize="18dp" />
 
                 </LinearLayout>
@@ -73,16 +74,17 @@
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/sulyzo"/>
+                        android:layout_width="135dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/my_gif"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:text="Abs2"
-                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:text="Russain twist"
+                        android:textColor="@color/white"
                         android:textSize="18dp" />
                 </LinearLayout>
 
@@ -106,16 +108,17 @@
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/sulyzo"/>
+                        android:layout_width="135dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/my_gif"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:text="Abs3"
-                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:text="Dumbbell Side\nBridge"
+                        android:textColor="@color/white"
                         android:textSize="18dp" />
                 </LinearLayout>
 
@@ -139,16 +142,17 @@
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/sulyzo"/>
+                        android:layout_width="135dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/my_gif"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:text="Abs4"
-                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:text="Súlyzós\noldalhajlítás"
+                        android:textColor="@color/white"
                         android:textSize="18dp" />
                 </LinearLayout>
 

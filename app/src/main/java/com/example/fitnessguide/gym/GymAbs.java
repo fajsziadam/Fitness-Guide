@@ -23,20 +23,20 @@ public class GymAbs extends AppCompatActivity {
         showButtons();
 
         abs1.setOnClickListener(v -> {
-                setContentView(R.layout.gym_abs1);
-                currentLayoutId = R.layout.gym_abs1;
+                setContentView(R.layout.gym_abs_felules);
+                currentLayoutId = R.layout.gym_abs_felules;
         });
         abs2.setOnClickListener(v -> {
-                setContentView(R.layout.gym_abs2);
-                currentLayoutId = R.layout.gym_abs2;
+                setContentView(R.layout.gym_abs_russain);
+                currentLayoutId = R.layout.gym_abs_russain;
         });
         abs3.setOnClickListener(v -> {
-                setContentView(R.layout.gym_abs3);
-                currentLayoutId = R.layout.gym_abs3;
+                setContentView(R.layout.gym_abs_dumbellside);
+                currentLayoutId = R.layout.gym_abs_dumbellside;
         });
         abs4.setOnClickListener(v -> {
-                setContentView(R.layout.gym_abs4);
-                currentLayoutId = R.layout.gym_abs4;
+                setContentView(R.layout.gym_abs_oldalrahajlitas);
+                currentLayoutId = R.layout.gym_abs_oldalrahajlitas;
         });
 
     }

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginTop="50dp">
+    android:padding="10dp">
 
     <LinearLayout
         android:layout_height="match_parent"
@@ -14,9 +14,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/caesar_dressing"
-            android:text="Abs1"
+            android:text="Guggolás"
             android:textSize="24sp"
+            android:textColor="@color/white"
             android:textStyle="bold" />
 
         <pl.droidsonroids.gif.GifImageView
@@ -25,15 +25,24 @@
             android:src="@drawable/my_gif" />
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="257dp"
-            android:src="@drawable/anatomy2" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gymlegs_guggolas" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/white"
             android:layout_marginTop="50dp"
-            android:text="Hello, ez egy példa szöveg!" />
+            android:text="1. Állj egyenes háttal, kis terpeszben, lábaid körülbelül vállszélességben legyenek egymástól.
+\n\n2. A rúd a hát felső részén helyezkedjen el. Guggolj le úgy, hogy a térdeidet oldalra tolod, miközben a csípődet hátra mozgatod.
+\n\n3. Addig engedd le magad, amíg csípőd kicsit lejjebb lesz a térdeidnél.
+\n\n4. Nyomd fel magad és térj vissza a kiindulás helyzetbe.
+\n\n5. Hajtsd végre a gyakorlatot 8-12 ismétlésszámmal.
+"
+            />
+
 
     </LinearLayout>
 </ScrollView>

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginTop="50dp">
+    android:padding="10dp">
 
     <LinearLayout
         android:layout_height="match_parent"
@@ -14,9 +14,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/caesar_dressing"
-            android:text="Shoulder1"
+            android:text="Vállból nyomás egykezes súlyzóval"
             android:textSize="24sp"
+            android:textColor="@color/white"
             android:textStyle="bold" />
 
         <pl.droidsonroids.gif.GifImageView
@@ -25,15 +25,23 @@
             android:src="@drawable/my_gif" />
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="257dp"
-            android:src="@drawable/my_gif" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gymshoulder_vallbolnyomas" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/white"
             android:layout_marginTop="50dp"
-            android:text="Hello, ez egy példa szöveg!" />
+            android:text="1. Tartsd a súlyzókat a vállak fölött úgy, hogy a tenyered előre néz, a könyököd pedig oldalra legyen és 90°-os szöget zárjanak be.
+\n\n2.Nyomd ki a súlyzókat a fejed fölé.
+\n\n3.Ezután lassan térj vissza a kiindulási helyzetbe.
+\n\n4. Hajtsd végre a gyakorlatot 8-12 ismétlésszámmal.
+"
+            />
+
 
     </LinearLayout>
 </ScrollView>

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginTop="50dp">
+    android:padding="10dp">
 
     <LinearLayout
         android:layout_height="match_parent"
@@ -14,9 +14,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/caesar_dressing"
-            android:text="Triceps3"
+            android:text="Mellhez húzás széles fogással"
             android:textSize="24sp"
+            android:textColor="@color/white"
             android:textStyle="bold" />
 
         <pl.droidsonroids.gif.GifImageView
@@ -25,15 +25,23 @@
             android:src="@drawable/my_gif" />
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="257dp"
-            android:src="@drawable/my_gif" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gymback_mellhezhuzas" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/white"
             android:layout_marginTop="50dp"
-            android:text="Hello, ez egy példa szöveg!" />
+            android:text="1. Fogd meg rudat a vállszélességnél kicsit szélesebben. Ülj az ülésre, térdeid rögzítsd a párnák alá.
+\n\n2. Egyenes háttal, könyökeiddel vezetve húzd le a rudat, amíg meg nem érinti a mellkas felső részét.
+\n\n3. Lassan állítsd vissza a rudat a kiindulási helyzetbe.
+\n\n4. Hajtsd végre a gyakorlatot 8-12 ismétlésszámmal.
+"
+            />
+
 
     </LinearLayout>
 </ScrollView>

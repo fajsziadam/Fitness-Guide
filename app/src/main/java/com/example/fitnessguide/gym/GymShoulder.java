@@ -10,7 +10,7 @@ import android.view.WindowManager;
 import com.example.fitnessguide.R;
 
 public class GymShoulder extends AppCompatActivity {
-    private CardView shoulder1,shoulder2,shoulder3,shoulder4;
+    private CardView shoulder1,shoulder2,shoulder3,shoulder4, shoulder5;
     private int currentLayoutId;
 
     @Override
@@ -23,20 +23,24 @@ public class GymShoulder extends AppCompatActivity {
         showButtons();
 
         shoulder1.setOnClickListener(v -> {
-                setContentView(R.layout.gym_shoulder1);
-                currentLayoutId = R.layout.gym_shoulder1;
+                setContentView(R.layout.gym_shoulder_vallbolnyomas);
+                currentLayoutId = R.layout.gym_shoulder_vallbolnyomas;
         });
         shoulder2.setOnClickListener(v -> {
-                setContentView(R.layout.gym_shoulder2);
-                currentLayoutId = R.layout.gym_shoulder2;
+                setContentView(R.layout.gym_shoulder_oldalraemeles);
+                currentLayoutId = R.layout.gym_shoulder_oldalraemeles;
         });
         shoulder3.setOnClickListener(v -> {
-                setContentView(R.layout.gym_shoulder3);
-                currentLayoutId = R.layout.gym_shoulder3;
+                setContentView(R.layout.gym_shoulder_eloreemeles);
+                currentLayoutId = R.layout.gym_shoulder_eloreemeles;
         });
         shoulder4.setOnClickListener(v -> {
-                setContentView(R.layout.gym_shoulder4);
-                currentLayoutId = R.layout.gym_shoulder4;
+                setContentView(R.layout.gym_shoulder_allighuzas);
+                currentLayoutId = R.layout.gym_shoulder_allighuzas;
+        });
+        shoulder5.setOnClickListener(v -> {
+            setContentView(R.layout.gym_shoulder_vallvonogatas);
+            currentLayoutId = R.layout.gym_shoulder_vallvonogatas;
         });
 
     }
@@ -58,5 +62,6 @@ public class GymShoulder extends AppCompatActivity {
         shoulder2 = findViewById(R.id.shoulder2);
         shoulder3 = findViewById(R.id.shoulder3);
         shoulder4 = findViewById(R.id.shoulder4);
+        shoulder5 = findViewById(R.id.shoulder5);
     }
 }

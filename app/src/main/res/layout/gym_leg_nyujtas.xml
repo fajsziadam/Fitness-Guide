@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginTop="50dp">
+    android:padding="10dp">
 
     <LinearLayout
         android:layout_height="match_parent"
@@ -14,9 +14,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/caesar_dressing"
-            android:text="Chest3"
+            android:text="Lábnyújtás gépen"
             android:textSize="24sp"
+            android:textColor="@color/white"
             android:textStyle="bold" />
 
         <pl.droidsonroids.gif.GifImageView
@@ -25,14 +25,23 @@
             android:src="@drawable/my_gif" />
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="257dp"
-            android:src="@drawable/my_gif" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gymlegs_nyujtas" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/white"
             android:layout_marginTop="50dp"
-            android:text="Hello, ez egy példa szöveg!" />
+            android:text="1. Állítsd be a gépet megfelelően, majd helyezkedj el rajta kényelmesen és tedd a kezeidet a fogantyúkra.
+\n\n2. Kilégzés közben a lábaid kinyújtásával emeld fel a súlyt, amíg a lábaid szinte egyenesek nem lesznek. Hátadat nyomd végig a háttámlának.
+\n\n3. Belégzés közben engedd vissza a súlyt a kiindulási helyzetbe.
+\n\n4. Hajtsd végre a gyakorlatot 8-12 ismétlésszámmal.
+"
+            />
+
 
     </LinearLayout>
 </ScrollView>

@@ -39,18 +39,18 @@
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/sulyzo"/>
+                        android:layout_width="135dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/my_gif"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:text="Triceps1"
-                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:text="Csigás letolás\n tricepsz kötéllel"
+                        android:textColor="@color/white"
                         android:textSize="18dp" />
-
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -73,16 +73,17 @@
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/sulyzo"/>
+                        android:layout_width="135dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/my_gif"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:text="Triceps2"
-                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:text="Csigás\n letolás rúddal "
+                        android:textColor="@color/white"
                         android:textSize="18dp" />
                 </LinearLayout>
 
@@ -106,16 +107,17 @@
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/sulyzo"/>
+                        android:layout_width="135dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/my_gif"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:text="Triceps3"
-                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:text="Egykezes\ntricepsznyújtás\nfekve"
+                        android:textColor="@color/white"
                         android:textSize="18dp" />
                 </LinearLayout>
 
@@ -139,16 +141,17 @@
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/sulyzo"/>
+                        android:layout_width="135dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/my_gif"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:text="Triceps4"
-                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:text="Tricepsznyújtás\n állva"
+                        android:textColor="@color/white"
                         android:textSize="18dp" />
                 </LinearLayout>
 

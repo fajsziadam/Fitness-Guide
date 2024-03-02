@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginTop="50dp">
+    android:padding="10dp">
 
     <LinearLayout
         android:layout_height="match_parent"
@@ -14,9 +14,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/caesar_dressing"
-            android:text="Triceps2"
+            android:text="Fekvenyomás"
             android:textSize="24sp"
+            android:textColor="@color/white"
             android:textStyle="bold" />
 
         <pl.droidsonroids.gif.GifImageView
@@ -25,15 +25,23 @@
             android:src="@drawable/my_gif" />
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="257dp"
-            android:src="@drawable/my_gif" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gymchest_fekvenyomas" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/white"
             android:layout_marginTop="50dp"
-            android:text="Hello, ez egy példa szöveg!" />
+            android:text="1. Feküdj hanyatt egy egyenes padra, úgy hogy a lábaid legyenek stabilan a talajon.
+\n\n2. Emeld le a súlyzót az állványról, majd enged le a rudat a mellkashoz, úgy hogy a könyökök körülbelül 45 fokkal oldalra hajoljanak a testedtől.
+\n\n3. Miközben engedjük lefelé a súlyzókat a mellkasunkhoz szívjuk be a levegőt, majd kilégzés közben nyomjuk fel a súlyzót.
+\n\n4. Hajtsd végre a gyakorlatot 8-12 ismétlésszámmal.
+"
+/>
+
 
     </LinearLayout>
 </ScrollView>

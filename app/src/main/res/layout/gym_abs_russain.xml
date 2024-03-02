@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginTop="50dp">
+    android:padding="10dp">
 
     <LinearLayout
         android:layout_height="match_parent"
@@ -14,9 +14,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/caesar_dressing"
-            android:text="Abs4"
+            android:text="Russain twist"
             android:textSize="24sp"
+            android:textColor="@color/white"
             android:textStyle="bold" />
 
         <pl.droidsonroids.gif.GifImageView
@@ -25,15 +25,25 @@
             android:src="@drawable/my_gif" />
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="257dp"
-            android:src="@drawable/my_gif" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gymabs_russain" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/white"
             android:layout_marginTop="50dp"
-            android:text="Hello, ez egy példa szöveg!" />
+            android:text="1. Ülj a földre, hajlítsd be a térdeidet és emeld fel a lábaidat a padlóról. Egyenes háttal dőlj hátra, tested a padlóval kb 45 fokos szöget zárjon be.
+\n\n2. Fogj egy súlyzót és nyújtsd ki karjaidat egyenesen előre.
+\n\n3. Először fordulj balra, majd vissza középre, majd jobbra.
+\n\n4. Hajtsd végre a gyakorlatot 8-12 ismétlésszámmal.
+
+
+"
+            />
+
 
     </LinearLayout>
 </ScrollView>

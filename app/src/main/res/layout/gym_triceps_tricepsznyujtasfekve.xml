@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginTop="50dp">
+    android:padding="10dp">
 
     <LinearLayout
         android:layout_height="match_parent"
@@ -14,9 +14,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/caesar_dressing"
-            android:text="Back2"
+            android:text="Egykezes tricepsznyújtás fekve"
             android:textSize="24sp"
+            android:textColor="@color/white"
             android:textStyle="bold" />
 
         <pl.droidsonroids.gif.GifImageView
@@ -25,15 +25,24 @@
             android:src="@drawable/my_gif" />
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="257dp"
-            android:src="@drawable/my_gif" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gymtriceps_tricepsznyujtasallva" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/white"
             android:layout_marginTop="50dp"
-            android:text="Hello, ez egy példa szöveg!" />
+            android:text="1. Feküdj egy padra, lábaid legyenek stabilan a földön vagy feküdj a földre, hajlított térdekkel és fogj egy-egy súlyzót mindkét kezedben.
+\n\n2. Nyújtsd ki a karjaidat, a súlyzók közvetlenül a vállak fölött helyezkedjenek el.
+\n\n3. Hajlítsd be a könyököd, és engedd le a súlyzókat, amíg közel nem érnek a füleidhez.
+\n\n4. Emeld fel a súlyzókat a kiindulási helyzetbe.
+\n\n5. Hajtsd végre a gyakorlatot 8-12 ismétlésszámmal.
+"
+            />
+
 
     </LinearLayout>
 </ScrollView>

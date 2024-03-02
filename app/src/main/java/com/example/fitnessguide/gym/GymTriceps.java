@@ -23,20 +23,20 @@ public class GymTriceps extends AppCompatActivity {
         showButtons();
 
         triceps1.setOnClickListener(v -> {
-                setContentView(R.layout.gym_triceps1);
-                currentLayoutId = R.layout.gym_triceps1;
+                setContentView(R.layout.gym_triceps_letolaskotellel);
+                currentLayoutId = R.layout.gym_triceps_letolaskotellel;
         });
         triceps2.setOnClickListener(v -> {
-                setContentView(R.layout.gym_triceps2);
-                currentLayoutId = R.layout.gym_triceps2;
+                setContentView(R.layout.gym_triceps_letolasruddal);
+                currentLayoutId = R.layout.gym_triceps_letolasruddal;
         });
         triceps3.setOnClickListener(v -> {
-                setContentView(R.layout.gym_triceps3);
-                currentLayoutId = R.layout.gym_triceps3;
+                setContentView(R.layout.gym_triceps_tricepsznyujtasfekve);
+                currentLayoutId = R.layout.gym_triceps_tricepsznyujtasfekve;
         });
         triceps4.setOnClickListener(v -> {
-                setContentView(R.layout.gym_triceps4);
-                currentLayoutId = R.layout.gym_triceps4;
+                setContentView(R.layout.gym_triceps_tricepsznyujtasallva);
+                currentLayoutId = R.layout.gym_triceps_tricepsznyujtasallva;
         });
 
     }

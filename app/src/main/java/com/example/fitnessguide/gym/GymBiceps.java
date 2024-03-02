@@ -23,20 +23,20 @@ public class GymBiceps extends AppCompatActivity {
         showButtons();
 
         biceps1.setOnClickListener(v -> {
-                setContentView(R.layout.gym_biceps1);
-                currentLayoutId = R.layout.gym_biceps1;
+                setContentView(R.layout.gym_biceps_ketkezes);
+                currentLayoutId = R.layout.gym_biceps_ketkezes;
         });
         biceps2.setOnClickListener(v -> {
-                setContentView(R.layout.gym_biceps2);
-                currentLayoutId = R.layout.gym_biceps2;
+                setContentView(R.layout.gym_biceps_valtottegykezes);
+                currentLayoutId = R.layout.gym_biceps_valtottegykezes;
         });
         biceps3.setOnClickListener(v -> {
-                setContentView(R.layout.gym_biceps3);
-                currentLayoutId = R.layout.gym_biceps3;
+                setContentView(R.layout.gym_biceps_kalapacs);
+                currentLayoutId = R.layout.gym_biceps_kalapacs;
         });
         biceps4.setOnClickListener(v -> {
-                setContentView(R.layout.gym_biceps4);
-                currentLayoutId = R.layout.gym_biceps4;
+                setContentView(R.layout.gym_biceps_koncentralt);
+                currentLayoutId = R.layout.gym_biceps_koncentralt;
         });
 
     }

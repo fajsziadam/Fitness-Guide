@@ -10,7 +10,7 @@ import android.view.WindowManager;
 import com.example.fitnessguide.R;
 
 public class GymChest extends AppCompatActivity {
-    private CardView chest1,chest2,chest3,chest4;
+    private CardView chest1,chest2,chest3,chest4,chest5;
     private int currentLayoutId;
 
     @Override
@@ -23,20 +23,24 @@ public class GymChest extends AppCompatActivity {
         showButtons();
 
         chest1.setOnClickListener(v -> {
-                setContentView(R.layout.gym_chest1);
-                currentLayoutId = R.layout.gym_chest1;
+                setContentView(R.layout.gym_chest_fekvenyomas);
+                currentLayoutId = R.layout.gym_chest_fekvenyomas;
         });
         chest2.setOnClickListener(v -> {
-                setContentView(R.layout.gym_chest2);
-                currentLayoutId = R.layout.gym_chest2;
+                setContentView(R.layout.gym_chest_fekvenyomasegykezessel);
+                currentLayoutId = R.layout.gym_chest_fekvenyomasegykezessel;
         });
         chest3.setOnClickListener(v -> {
-                setContentView(R.layout.gym_chest3);
-                currentLayoutId = R.layout.gym_chest3;
+                setContentView(R.layout.gym_chest_ferdepados);
+                currentLayoutId = R.layout.gym_chest_ferdepados;
         });
         chest4.setOnClickListener(v -> {
-                setContentView(R.layout.gym_chest4);
-                currentLayoutId = R.layout.gym_chest4;
+                setContentView(R.layout.gym_chest_tarogatasegykezessel);
+                currentLayoutId = R.layout.gym_chest_tarogatasegykezessel;
+        });
+        chest5.setOnClickListener(v -> {
+            setContentView(R.layout.gym_chest_pecdeck);
+            currentLayoutId = R.layout.gym_chest_pecdeck;
         });
 
     }
@@ -58,5 +62,6 @@ public class GymChest extends AppCompatActivity {
         chest2 = findViewById(R.id.chest2);
         chest3 = findViewById(R.id.chest3);
         chest4 = findViewById(R.id.chest4);
+        chest5 = findViewById(R.id.chest5);
     }
 }

@@ -39,16 +39,17 @@
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/sulyzo"/>
+                        android:layout_width="135dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/my_gif"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:text="Back1"
-                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:text="Mellhez húzás\nszéles fogással "
+                        android:textColor="@color/white"
                         android:textSize="18dp" />
 
                 </LinearLayout>
@@ -73,19 +74,19 @@
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/sulyzo"/>
+                        android:layout_width="135dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/my_gif"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:text="Back2"
-                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:text=" T-rudas evezés"
+                        android:textColor="@color/white"
                         android:textSize="18dp" />
                 </LinearLayout>
-
 
             </androidx.cardview.widget.CardView>
 
@@ -107,16 +108,17 @@
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/sulyzo"/>
+                        android:layout_width="135dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/my_gif"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:text="Back3"
-                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:text="Kábeles evezés"
+                        android:textColor="@color/white"
                         android:textSize="18dp" />
                 </LinearLayout>
 
@@ -140,16 +142,51 @@
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/sulyzo"/>
+                        android:layout_width="135dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/my_gif"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:text="Back4"
-                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:text="Egykezes\ndöntött törzsű\nevezés"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/back5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="135dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/my_gif"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="Vállvonogatás"
+                        android:textColor="@color/white"
                         android:textSize="18dp" />
                 </LinearLayout>
 

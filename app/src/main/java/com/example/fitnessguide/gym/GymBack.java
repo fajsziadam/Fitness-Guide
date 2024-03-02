@@ -10,7 +10,7 @@ import android.view.WindowManager;
 import com.example.fitnessguide.R;
 
 public class GymBack extends AppCompatActivity {
-    private CardView back1,back2,back3,back4;
+    private CardView back1,back2,back3,back4,back5;
     private int currentLayoutId;
 
     @Override
@@ -23,20 +23,24 @@ public class GymBack extends AppCompatActivity {
         showButtons();
 
         back1.setOnClickListener(v -> {
-                setContentView(R.layout.gym_back1);
-                currentLayoutId = R.layout.gym_back1;
+                setContentView(R.layout.gym_back_mellhezhuzas);
+                currentLayoutId = R.layout.gym_back_mellhezhuzas;
         });
         back2.setOnClickListener(v -> {
-                setContentView(R.layout.gym_back2);
-                currentLayoutId = R.layout.gym_back2;
+                setContentView(R.layout.gym_back_trudas);
+                currentLayoutId = R.layout.gym_back_trudas;
         });
         back3.setOnClickListener(v -> {
-                setContentView(R.layout.gym_back3);
-                currentLayoutId = R.layout.gym_back3;
+                setContentView(R.layout.gym_back_kabelesevezes);
+                currentLayoutId = R.layout.gym_back_kabelesevezes;
         });
         back4.setOnClickListener(v -> {
-                setContentView(R.layout.gym_back4);
-                currentLayoutId = R.layout.gym_back4 ;
+                setContentView(R.layout.gym_back_egykezesevezes);
+                currentLayoutId = R.layout.gym_back_egykezesevezes;
+        });
+        back5.setOnClickListener(v -> {
+            setContentView(R.layout.gym_back_vallvonogatas);
+            currentLayoutId = R.layout.gym_back_vallvonogatas;
         });
 
     }
@@ -58,5 +62,6 @@ public class GymBack extends AppCompatActivity {
         back2 = findViewById(R.id.back2);
         back3 = findViewById(R.id.back3);
         back4 = findViewById(R.id.back4);
+        back5 = findViewById(R.id.back5);
     }
 }

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginTop="50dp">
+    android:padding="10dp">
 
     <LinearLayout
         android:layout_height="match_parent"
@@ -14,9 +14,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/caesar_dressing"
-            android:text="Abs3"
+            android:text="Csigás letolás tricepsz kötéllel"
             android:textSize="24sp"
+            android:textColor="@color/white"
             android:textStyle="bold" />
 
         <pl.droidsonroids.gif.GifImageView
@@ -25,15 +25,24 @@
             android:src="@drawable/my_gif" />
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="257dp"
-            android:src="@drawable/my_gif" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gymtriceps_letolaskotellel" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/white"
             android:layout_marginTop="50dp"
-            android:text="Hello, ez egy példa szöveg!" />
+            android:text="1. Rögzíts egy tricepsz kötelet a kábel végére. Ennek a mellkas magasságában kell lógnia.
+\n\n2. Állj egyenes háttal, kis terpeszben, lábaid legyenek kissé behajlítva és körülbelül vállszélességben legyenek egymástól.
+\n\n3. Könyökeid és a felkarjaid szorítsd az oldaladhoz. Húzd lefelé a kötelet a tested mellé addig, amíg a karjaid ki nem nyújtódnak.
+\n\n4. Majd engedd vissza a kötelet a kiindulási helyzetbe.
+\n\n5. Hajtsd végre a gyakorlatot 8-12 ismétlésszámmal.
+"
+            />
+
 
     </LinearLayout>
 </ScrollView>

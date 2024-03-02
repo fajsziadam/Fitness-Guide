@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginTop="50dp">
+    android:padding="10dp">
 
     <LinearLayout
         android:layout_height="match_parent"
@@ -14,8 +14,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/caesar_dressing"
-            android:text="Shoulder4"
+            android:text="Tárogatás egykezes súlyzókkal"
+            android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -25,15 +25,24 @@
             android:src="@drawable/my_gif" />
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="257dp"
-            android:src="@drawable/my_gif" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gymchest_tarogatas_sulyzoval" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="15dp"
             android:layout_marginTop="50dp"
-            android:text="Hello, ez egy példa szöveg!" />
+            android:textColor="@color/white"
+            android:text="1. Fogd meg a súlyzókat, feküdj a földre vagy a padra, úgy hogy a lábaid legyenek stabilan a talajon.
+\n\n2. Emeld fel a súlyzókat a mellkasod fölé. Enyhén hajlított könyökkel hajtsd végre a gyakorlatot.
+\n\n3. Engedd le a súlyzókat oldalra és közben szívd be a levegőt. Majd kilégzés közben térj vissza a kiinduló állapotba.
+\n\n4. Ha földön végezzük a gyakorlatot akkor ügyeljünk arra, hogy lefelé menet ne érje a könyökünk a padlót.
+\n\n5. Hajtsd végre a gyakorlatot 8-12 ismétlésszámmal.
+"
+            />
+
 
     </LinearLayout>
 </ScrollView>

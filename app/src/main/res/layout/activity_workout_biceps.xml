@@ -39,18 +39,18 @@
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/sulyzo"/>
+                        android:layout_width="135dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/my_gif"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:text="Biceps1"
-                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:text="Bicepsz állva\nkétkezes rúddal"
+                        android:textColor="@color/white"
                         android:textSize="18dp" />
-
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -73,16 +73,17 @@
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/sulyzo"/>
+                        android:layout_width="135dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/my_gif"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:text="Biceps2"
-                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:text="Bicepsz állva\nváltott karral"
+                        android:textColor="@color/white"
                         android:textSize="18dp" />
                 </LinearLayout>
 
@@ -106,16 +107,17 @@
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/sulyzo"/>
+                        android:layout_width="135dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/my_gif"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:text="Biceps3"
-                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:text="Kalapács\nbicepsz gyakorlat"
+                        android:textColor="@color/white"
                         android:textSize="18dp" />
                 </LinearLayout>
 
@@ -139,16 +141,17 @@
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/sulyzo"/>
+                        android:layout_width="135dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/my_gif"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:text="Biceps4"
-                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:text="Koncentrált\nbicepszgyakorlat"
+                        android:textColor="@color/white"
                         android:textSize="18dp" />
                 </LinearLayout>
 

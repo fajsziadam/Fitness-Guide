@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginTop="50dp">
+    android:padding="10dp">
 
     <LinearLayout
         android:layout_height="match_parent"
@@ -14,9 +14,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/caesar_dressing"
-            android:text="Leg3"
+            android:text="Kalapács bicepsz gyakorlat"
             android:textSize="24sp"
+            android:textColor="@color/white"
             android:textStyle="bold" />
 
         <pl.droidsonroids.gif.GifImageView
@@ -25,15 +25,22 @@
             android:src="@drawable/my_gif" />
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="257dp"
-            android:src="@drawable/my_gif" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gymbiceps_egykezes" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/white"
             android:layout_marginTop="50dp"
-            android:text="Hello, ez egy példa szöveg!" />
+            android:text="1. Állj egyenes háttal, kis terpeszben, lábaid körülbelül vállszélességben legyenek egymástól. Tartsd a súlyzókat magad mellett leengedve, kinyújtott karral, tenyereid nézzenek a teseted felé. Vállaidat húzd hátra.
+\n\n2. Kilégzés közben hajlítsd be az egyik kezed a vállad felé, majd a mozdulat végén tartsd meg kicsit. Ezután lassan engedd vissza a kiindulási helyzetbe és közben halítsd a másik kezedet a vállad felé.
+\n\n3. Hajtsd végre a gyakorlatot 8-12 ismétlésszámmal.
+"
+            />
+
 
     </LinearLayout>
 </ScrollView>
