@@ -34,7 +34,8 @@
             android:layout_height="wrap_content"
             android:textSize="15dp"
             android:textColor="@color/white"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="30dp"
             android:text="1. Fogd meg rudat a vállszélességnél kicsit szélesebben. Ülj az ülésre, térdeid rögzítsd a párnák alá.
 \n\n2. Egyenes háttal, könyökeiddel vezetve húzd le a rudat, amíg meg nem érinti a mellkas felső részét.
 \n\n3. Lassan állítsd vissza a rudat a kiindulási helyzetbe.

@@ -34,7 +34,8 @@
             android:layout_height="wrap_content"
             android:textSize="15dp"
             android:textColor="@color/white"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="30dp"
             android:text="1. Vegyél mindekét kezedbe 1-1 súlyzót. Állj egyenes háttal, kis terpeszben, lábaid körülbelül vállszélességben legyenek egymástól, karjaid lógjanak a tested mellett. Tartsd a súlyzót magad előtt leengedve, tenyerek a test felé nézzenek.
 \n\n2. Belégzés közben emeld fel a válladat a füled felé, amennyire tudod. A mozgást lassan végezd.
 \n\n3. Engedd le a vállaid a kiindulási helyzetbe.

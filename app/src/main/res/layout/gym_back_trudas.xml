@@ -34,7 +34,8 @@
             android:layout_height="wrap_content"
             android:textSize="15dp"
             android:textColor="@color/white"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="30dp"
             android:text="1. Állítsd be a megfelelő súlyt, majd egyenes háttal hajolj addig, amíg a tested a talaj felé nem néz.
 \n\n2. Fogd meg a T rudat a fogantyú segítségével és húzd fel a rudat addig, amíg a könyökeid az oldaladhoz nem érnek.
 \n\n3. Lassan engedd vissza a rudat a kiindulási helyzetbe.

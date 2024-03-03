@@ -34,7 +34,8 @@
             android:layout_height="wrap_content"
             android:textSize="15dp"
             android:textColor="@color/white"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="30dp"
             android:text="1. Feküdj egy padra, lábaid legyenek stabilan a földön vagy feküdj a földre, hajlított térdekkel és fogj egy-egy súlyzót mindkét kezedben.
 \n\n2. Nyújtsd ki a karjaidat, a súlyzók közvetlenül a vállak fölött helyezkedjenek el.
 \n\n3. Hajlítsd be a könyököd, és engedd le a súlyzókat, amíg közel nem érnek a füleidhez.

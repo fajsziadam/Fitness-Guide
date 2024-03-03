@@ -34,7 +34,8 @@
             android:layout_height="wrap_content"
             android:textSize="15dp"
             android:textColor="@color/white"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="30dp"
             android:text="1. Állítsd be a vállpárna magasságát megfelelően.
 \n\n2. Lépj a párna alá vállszéles terpeszben, és helyezd el a lemezen a lábaidat úgy, hogy a sarkaid lelógjanak.
 \n\n3. Egyenes háttal és lábbal végezd a gyakorlatot. Emelkedj lábujjhegyre, majd engedd vissza magad.

@@ -34,7 +34,8 @@
             android:layout_height="wrap_content"
             android:textSize="15dp"
             android:textColor="@color/white"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="30dp"
             android:text="1. A gyakorlat végrehajtása előtt fontos, hogy beállítsuk a fogásszélességet, az ülésmagasságot és végül azt a súlyt amivel szeretnénk edzeni.
 \n\n2. Ha mindent beállítottunk, akkor üljünk le kényelmesen az ülő tárogató gépre. Nyomd a hátadat erősen a háttámlához, lábaid legyenek stabilan a talajon.
 \n\n3. Fogd meg a fogantyúkat, majd húzd a karod a teste felé. Tartsd meg a pozíciót néhány másodpercig, majd lassan engedd vissza a kiindulási helyzetbe.

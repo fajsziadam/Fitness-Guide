@@ -34,7 +34,8 @@
             android:layout_height="wrap_content"
             android:textSize="15dp"
             android:textColor="@color/white"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="30dp"
             android:text="1. Feküdj az egyik oldaladra, tedd egymásra a lábaid, majd nyomd fel magad. Támaszd meg magad az egyik könyöködön.
 \n\n2. Másik kezedben fogj egy súlyzót és nyújtsd ki a karod egyenesen a mennyezet felé. Tartsd egyenesen vonalban  a tested.
 \n\n3. Tartsd meg ezt a pozíciót néhány másodpercig, majd engedd le tested a kiindulási helyzetbe.

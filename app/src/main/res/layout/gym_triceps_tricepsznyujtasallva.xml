@@ -34,7 +34,8 @@
             android:layout_height="wrap_content"
             android:textSize="15dp"
             android:textColor="@color/white"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="30dp"
             android:text="1. Állj egyenes háttal, kis terpeszben, lábaid körülbelül vállszélességben legyenek egymástól.
 \n\n2. Emeld fel a súlyzót fejed fölé úgy, hogy mindkét kezeddel fogod a súlyzólap belső felét.
 \n\n3. Lassan hajlítsd be a könyökeid, és engedd le a súlyt a fejed mögé.

@@ -34,7 +34,8 @@
             android:layout_height="wrap_content"
             android:textSize="15dp"
             android:textColor="@color/white"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="30dp"
             android:text="1. Állítsd be a gépet megfelelően, majd helyezkedj el rajta kényelmesen és tedd a kezeidet a fogantyúkra.
 \n\n2. Kilégzés közben a lábaid kinyújtásával emeld fel a súlyt, amíg a lábaid szinte egyenesek nem lesznek. Hátadat nyomd végig a háttámlának.
 \n\n3. Belégzés közben engedd vissza a súlyt a kiindulási helyzetbe.

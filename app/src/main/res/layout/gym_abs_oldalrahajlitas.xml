@@ -34,7 +34,8 @@
             android:layout_height="wrap_content"
             android:textSize="15dp"
             android:textColor="@color/white"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="30dp"
             android:text="1. Állj egyenes háttal, kis terpeszben, lábaid körülbelül vállszélességben legyenek egymástól. Tartsd a súlyzókat magad mellett leengedve, kinyújtott karral, tenyereid nézzenek a teseted felé. Vállaidat húzd hátra.
 \n\n2. Hajolj oldalra, de ügyelj arra, hogy hátad végig egyenes maradjon.
 \n\n3. Egyenesedj ki,  térj vissza a kezdő pozícióba.

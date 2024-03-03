@@ -34,7 +34,8 @@
             android:layout_height="wrap_content"
             android:textSize="15dp"
             android:textColor="@color/white"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="30dp"
             android:text="1. Fogj egy súlyzót és feküdj a földre behajlított lábakkal.
 \n\n2. Nyomd súlyzót a fejed fölé és tartsd ott.
 \n\n3. A súlyzóval hajtsd végre a felülést, majd lassan engedd vissza magad.

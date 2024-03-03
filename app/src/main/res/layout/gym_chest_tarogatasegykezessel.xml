@@ -33,7 +33,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="30dp"
             android:textColor="@color/white"
             android:text="1. Fogd meg a súlyzókat, feküdj a földre vagy a padra, úgy hogy a lábaid legyenek stabilan a talajon.
 \n\n2. Emeld fel a súlyzókat a mellkasod fölé. Enyhén hajlított könyökkel hajtsd végre a gyakorlatot.

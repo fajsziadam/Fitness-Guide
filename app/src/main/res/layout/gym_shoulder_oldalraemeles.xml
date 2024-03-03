@@ -34,7 +34,8 @@
             android:layout_height="wrap_content"
             android:textSize="15dp"
             android:textColor="@color/white"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="30dp"
             android:text="1. Vegyél mindekét kezedbe 1-1 súlyzót. Állj kis terpeszben egyenes háttal, karjaid lógjanak a tested mellett.
 \n\n2. Emeld a súlyzókat oldalra enyhén behajlított könyökkel a válltól kicsit magasabbra.
 \n\n3. Térj vissza a kiinduló helyzetbe.

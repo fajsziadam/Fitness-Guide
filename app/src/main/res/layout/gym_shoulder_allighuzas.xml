@@ -34,7 +34,8 @@
             android:layout_height="wrap_content"
             android:textSize="15dp"
             android:textColor="@color/white"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="30dp"
             android:text="1. Állj egyenes háttal, kis terpeszben, lábaid körülbelül vállszélességben legyenek egymástól. Tartsd a súlyzót magad előtt leengedve, kinyújtott karral.
 \n\n2. Kilégzés közben emeld fel a súlyzót az állad felé. A tetején tartsd meg 1-2 másodpercig.
 \n\n3. Belégzés közben engedd le a súlyzót a kiindulási helyzetbe.

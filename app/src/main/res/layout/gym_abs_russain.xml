@@ -34,7 +34,8 @@
             android:layout_height="wrap_content"
             android:textSize="15dp"
             android:textColor="@color/white"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="30dp"
             android:text="1. Ülj a földre, hajlítsd be a térdeidet és emeld fel a lábaidat a padlóról. Egyenes háttal dőlj hátra, tested a padlóval kb 45 fokos szöget zárjon be.
 \n\n2. Fogj egy súlyzót és nyújtsd ki karjaidat egyenesen előre.
 \n\n3. Először fordulj balra, majd vissza középre, majd jobbra.

@@ -34,7 +34,8 @@
             android:layout_height="wrap_content"
             android:textSize="15dp"
             android:textColor="@color/white"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="30dp"
             android:text="1. Fogd meg a súlyzókat, feküdj a földre vagy a padra, úgy, hogy  a lábaid legyenek stabilan a talajon.
 \n\n2. Emeld fel a súlyzókat, úgy hogy a könyököd 45-60 fokos szöget zárjon a testeddel. Miközben engedjük lefelé a súlyzókat a mellkasunk mellé vegyünk egy nagy levegőt, majd kilégzés közben nyomjuk fel a súlyzókat.
 \n\n3. Hajtsd végre a gyakorlatot 8-12 ismétlésszámmal.
