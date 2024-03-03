@@ -29,7 +29,7 @@ public class Plan extends AppCompatActivity {
         btn3DayGym = findViewById(R.id.btn3DayGym);
         btn5DayGym = findViewById(R.id.btn5DayGym);
 
-        plan3DayGym = findViewById(R.id.plan2DayGym);
+        plan3DayGym = findViewById(R.id.plan3DayGym);
         plan5DayGym = findViewById(R.id.plan5DayGym);
         planAllDayWorkout = findViewById(R.id.planAllDayWorkout);
         plan2DayWorkout = findViewById(R.id.plan2DayWorkout);

@@ -12,7 +12,8 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="197dp">
+        tools:layout_editor_absoluteY="197dp"
+        android:layout_marginBottom="30dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -75,8 +76,8 @@
                 <ImageView
                     android:id="@+id/plan5DayGym"
                     android:layout_width="wrap_content"
-                    android:layout_height="246dp"
-                    android:src="@drawable/gym5napos"
+                    android:layout_height="280dp"
+                    android:src="@drawable/plan_gym5napos"
                     android:visibility="gone"/>
 
                 <Button
@@ -93,10 +94,10 @@
                     android:backgroundTint="@color/cardview_dark_background"/>
 
                 <ImageView
-                    android:id="@+id/plan2DayGym"
+                    android:id="@+id/plan3DayGym"
                     android:layout_width="wrap_content"
-                    android:layout_height="246dp"
-                    android:src="@drawable/gym5napos"
+                    android:layout_height="260dp"
+                    android:src="@drawable/plan_gym3napos"
                     android:visibility="gone"/>
 
             </LinearLayout>
@@ -105,7 +106,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_marginTop="30dp">
+                android:layout_marginTop="20dp">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -138,8 +139,8 @@
                 <ImageView
                     android:id="@+id/planAllDayWorkout"
                     android:layout_width="wrap_content"
-                    android:layout_height="246dp"
-                    android:src="@drawable/gym5napos"
+                    android:layout_height="170dp"
+                    android:src="@drawable/plan_workoutmindennapos"
                     android:visibility="gone"/>
 
                 <Button
@@ -158,8 +159,8 @@
                 <ImageView
                     android:id="@+id/plan2DayWorkout"
                     android:layout_width="wrap_content"
-                    android:layout_height="246dp"
-                    android:src="@drawable/gym5napos"
+                    android:layout_height="220dp"
+                    android:src="@drawable/plan_workout2napos"
                     android:visibility="gone"/>
 
             </LinearLayout>
