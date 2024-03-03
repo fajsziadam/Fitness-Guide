@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Döntött törzsű evezés fordított fogással"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="286dp"
+            android:src="@drawable/my_gif" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/workoutbiceps_huzodzkodas" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="30dp"
+            android:text="1. A húzódzkodórúd körülbelül derékmagasságban legyen. Feküdj a rúd alá arccal felfelé.
+\n\n2. A húzódzkodó rudat körülbelül vállszélességben fogjuk meg, tenyerek a test felé nézzenek.
+\n\n3. Kilégzés közben húzd fel magad, amíg a mellkasod el nem éri a rudat. Ügyelj arra, hogy a gyakorlatot végig egyenes háttal végezd.
+\n\n4. Belégzés közben lassan engedd vissza magad a kiindulási helyzetbe.
+\n\n5. Hajtsd végre a gyakorlatot 10-15 ismétlésszámmal.
+"
+            />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -23,20 +23,20 @@ public class WorkoutShoulder extends AppCompatActivity {
         showButtons();
 
         shoulder1.setOnClickListener(v -> {
-                setContentView(R.layout.workout_shoulder1);
-                currentLayoutId = R.layout.workout_shoulder1;
+                setContentView(R.layout.workout_shoulder_bicskafekvotamasz);
+                currentLayoutId = R.layout.workout_shoulder_bicskafekvotamasz;
         });
         shoulder2.setOnClickListener(v -> {
-                setContentView(R.layout.workout_shoulder2);
-                currentLayoutId = R.layout.workout_shoulder2;
+                setContentView(R.layout.workout_shoulder_bicskafekvoemeltlabak);
+                currentLayoutId = R.layout.workout_shoulder_bicskafekvoemeltlabak;
         });
         shoulder3.setOnClickListener(v -> {
-                setContentView(R.layout.workout_shoulder3);
-                currentLayoutId = R.layout.workout_shoulder3;
+                setContentView(R.layout.workout_shoulder_oldalplank);
+                currentLayoutId = R.layout.workout_shoulder_oldalplank;
         });
         shoulder4.setOnClickListener(v -> {
-                setContentView(R.layout.workout_shoulder4);
-                currentLayoutId = R.layout.workout_shoulder4;
+                setContentView(R.layout.workout_shoulder_fekvotamasz);
+                currentLayoutId = R.layout.workout_shoulder_fekvotamasz;
         });
 
     }

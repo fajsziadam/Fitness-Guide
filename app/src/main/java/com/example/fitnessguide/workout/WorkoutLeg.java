@@ -23,20 +23,20 @@ public class WorkoutLeg extends AppCompatActivity {
         showButtons();
 
         leg1.setOnClickListener(v -> {
-                setContentView(R.layout.workout_leg1);
-                currentLayoutId = R.layout.workout_leg1;
+                setContentView(R.layout.workout_leg_guggolas);
+                currentLayoutId = R.layout.workout_leg_guggolas;
         });
         leg2.setOnClickListener(v -> {
-                setContentView(R.layout.workout_leg2);
-                currentLayoutId = R.layout.workout_leg2;
+                setContentView(R.layout.workout_leg_kitores);
+                currentLayoutId = R.layout.workout_leg_kitores;
         });
         leg3.setOnClickListener(v -> {
-                setContentView(R.layout.workout_leg3);
-                currentLayoutId = R.layout.workout_leg3;
+                setContentView(R.layout.workout_leg_oldalraguggolas);
+                currentLayoutId = R.layout.workout_leg_oldalraguggolas;
         });
         leg4.setOnClickListener(v -> {
-                setContentView(R.layout.workout_leg4);
-                currentLayoutId = R.layout.workout_leg4;
+                setContentView(R.layout.workout_leg_allovadli);
+                currentLayoutId = R.layout.workout_leg_allovadli;
         });
 
     }

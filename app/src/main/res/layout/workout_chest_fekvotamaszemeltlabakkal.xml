@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fekvőtámasz emelt lábbakkal"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="286dp"
+            android:src="@drawable/my_gif" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/workoutchest_fekvotamaszemeltlabak" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="30dp"
+            android:text="Ehhez a gyakorlathoz lábaidat egy magasabb felületre kell helyezni, ezzel nehezítve a fekvőtámaszt.
+\n\n1. Helyezd a lábaidat egy padra, a kezeidet a padlóra és támaszod vállszélességnél szélesebb legyen.
+\n\n2. Belégzés közben lassan hajlítsd be a könyöködet, és ereszkedj le a padlóra, addig amíg a mellkasod majdnem megérinti a padlót. A könyököknek 45 fokos távolságban kell lennie a testtől, a csuklóknak pedig a könyökök alatt kell lennie. Tartsd meg kicsit ezt a pozíciót.
+\n\n3. Kilégzés közben told vissza magad, amíg a karjaid egyenesek nem lesznek.
+\n\n4. Hajtsd végre a gyakorlatot 10-12 ismétlésszámmal.
+"
+            />
+
+
+    </LinearLayout>
+</ScrollView>

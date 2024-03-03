@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plank"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="286dp"
+            android:src="@drawable/my_gif" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/workoutabs_plank" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="30dp"
+            android:text="1. Feküdj hasra és támaszkodj az alkarjaidon. Nyomd fel magad úgy, hogy csak a lábujjaid és az alkarod marad a földön. A tested végig maradjon egyenes vonalban.
+\n\n2. Tartsd meg kb 20-30 másodpercig majd engedd vissza magad a földre.
+\n\n3. Hajtsd végre a gyakorlatot 3-4-szer.
+"
+            />
+
+
+    </LinearLayout>
+</ScrollView>

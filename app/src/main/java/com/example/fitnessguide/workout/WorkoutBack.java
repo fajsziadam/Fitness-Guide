@@ -10,7 +10,7 @@ import android.view.WindowManager;
 import com.example.fitnessguide.R;
 
 public class WorkoutBack extends AppCompatActivity {
-    private CardView back1,back2,back3,back4;
+    private CardView back1,back2,back3;
     private int currentLayoutId;
 
     @Override
@@ -23,20 +23,16 @@ public class WorkoutBack extends AppCompatActivity {
         showButtons();
 
         back1.setOnClickListener(v -> {
-                setContentView(R.layout.workout_back1);
-                currentLayoutId = R.layout.workout_back1;
+                setContentView(R.layout.workout_back_huzodzkodas);
+                currentLayoutId = R.layout.workout_back_huzodzkodas;
         });
         back2.setOnClickListener(v -> {
-                setContentView(R.layout.workout_back2);
-                currentLayoutId = R.layout.workout_back2;
+                setContentView(R.layout.workout_back_dontotttorzsuevezes);
+                currentLayoutId = R.layout.workout_back_dontotttorzsuevezes;
         });
         back3.setOnClickListener(v -> {
-                setContentView(R.layout.workout_back3);
-                currentLayoutId = R.layout.workout_back3;
-        });
-        back4.setOnClickListener(v -> {
-                setContentView(R.layout.workout_back4);
-                currentLayoutId = R.layout.workout_back4;
+                setContentView(R.layout.workout_back_fekvotamasz);
+                currentLayoutId = R.layout.workout_back_fekvotamasz;
         });
 
     }
@@ -57,6 +53,5 @@ public class WorkoutBack extends AppCompatActivity {
         back1 = findViewById(R.id.back1);
         back2 = findViewById(R.id.back2);
         back3 = findViewById(R.id.back3);
-        back4 = findViewById(R.id.back4);
     }
 }

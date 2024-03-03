@@ -23,20 +23,20 @@ public class WorkoutAbs extends AppCompatActivity {
         showButtons();
 
         abs1.setOnClickListener(v -> {
-                setContentView(R.layout.workout_abs1);
-                currentLayoutId = R.layout.workout_abs1;
+                setContentView(R.layout.workout_abs_felules);
+                currentLayoutId = R.layout.workout_abs_felules;
         });
         abs2.setOnClickListener(v -> {
-                setContentView(R.layout.workout_abs2);
-                currentLayoutId = R.layout.workout_abs2;
+                setContentView(R.layout.workout_abs_labemeles);
+                currentLayoutId = R.layout.workout_abs_labemeles;
         });
         abs3.setOnClickListener(v -> {
-                setContentView(R.layout.workout_abs3);
-                currentLayoutId = R.layout.workout_abs3;
+                setContentView(R.layout.workout_abs_haspres);
+                currentLayoutId = R.layout.workout_abs_haspres;
         });
         abs4.setOnClickListener(v -> {
-                setContentView(R.layout.workout_abs4);
-                currentLayoutId = R.layout.workout_abs4;
+                setContentView(R.layout.workout_abs_plank);
+                currentLayoutId = R.layout.workout_abs_plank;
         });
 
     }

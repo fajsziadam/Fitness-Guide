@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oldalsó plank tartás"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="286dp"
+            android:src="@drawable/my_gif" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/workoutshoulder_oldalsoplank" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="30dp"
+            android:text="1. Feküdj az oldaladra és lábaidat rakd egymásra. Helyezd az alkarodat a talajra a vállad alá.
+\n\n2. Nyomd fel magad úgy, hogy csak az alkarodon és a lábfejeden támaszkodsz.
+\n\n3. Tartsd meg ezt a pozíciót 15-20 másodpercig, majd engedd vissza magad és fordulj meg majd hajtsd végre a másik oldalon is.
+\n\n4. Hajtsd végre a gyakorlatot 3-4-szer.
+"
+            />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bicska fekvőtámasz emelt lábbal"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="286dp"
+            android:src="@drawable/my_gif" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/workoutshoulder_bicskafekvo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="30dp"
+            android:text="Hasonlóan kell elvégezni a gyakorlatot mint a bicska fekvőtámaszt de itt fel kell emelni a lábainkat például alacsony falra vagy padra.
+\n\n1. Először menj le négykézláb, támaszod legyen vállszélességű. Nyújtsd ki a lábad úgy, hogy egyenes vonalat képezzen a hátaddal. Emeld fel a tested úgy, hogy csak a tenyered és lábujjaid legyenek a padlón. Majd emeljük fel a lábunkat a padra.
+\n\n2. Kezeiddel kezdj el hátra, a lábaid felé haladni. A lábaid végig maradjanak egyenesek. A testnek fordított V alakot kell formáznia, a törzs és a lábak között 90 fokos szög legyen.
+\n\n3. Belégzés közben könyököd hajlításával engedd le magad. Fejeddel érintsd meg a talajt.
+\n\n4. Kilégzés közben nyomd vissza magad a kiindulási helyzetbe.
+\n\n5. Hajtsd végre a gyakorlatot 8-12 ismétlésszámmal.
+"
+            />
+
+
+    </LinearLayout>
+</ScrollView>

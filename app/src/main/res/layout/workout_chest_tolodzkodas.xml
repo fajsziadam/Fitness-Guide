@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tolódzkodás"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="286dp"
+            android:src="@drawable/my_gif" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/workoutchest_tolodzkodas" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="30dp"
+            android:text="1. Fogd meg a párhuzamos rudakat, ugorj fel, egyenesítsd ki a karjaidat.
+\n\n2. Belégzés közben engedd le magad a karjaid hajlításával addig, amíg a vállaid a könyökeid alá nem érnek vagy amíg el nem érsz legalább 90 fokos szöget a könyököddel.
+\n\n3. Kilégzés közben nyomd fel magad a karok kiegyenesítésével.
+\n\n4. Hajtsd végre a gyakorlatot 10-15 ismétlésszámmal.
+"
+            />
+
+
+    </LinearLayout>
+</ScrollView>

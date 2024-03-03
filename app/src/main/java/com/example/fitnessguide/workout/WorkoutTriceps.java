@@ -23,20 +23,20 @@ public class WorkoutTriceps extends AppCompatActivity {
         showButtons();
 
         triceps1.setOnClickListener(v -> {
-                setContentView(R.layout.workout_triceps1);
-                currentLayoutId = R.layout.workout_triceps1;
+                setContentView(R.layout.workout_triceps_tolodzkodas);
+                currentLayoutId = R.layout.workout_triceps_tolodzkodas;
         });
         triceps2.setOnClickListener(v -> {
-                setContentView(R.layout.workout_triceps2);
-                currentLayoutId = R.layout.workout_triceps2;
+                setContentView(R.layout.workout_triceps_szukfekvo);
+                currentLayoutId = R.layout.workout_triceps_szukfekvo;
         });
         triceps3.setOnClickListener(v -> {
-                setContentView(R.layout.workout_triceps3);
-                currentLayoutId = R.layout.workout_triceps3;
+                setContentView(R.layout.workout_triceps_hatsotolodzkodo);
+                currentLayoutId = R.layout.workout_triceps_hatsotolodzkodo;
         });
         triceps4.setOnClickListener(v -> {
-                setContentView(R.layout.workout_triceps4);
-                currentLayoutId = R.layout.workout_triceps4;
+                setContentView(R.layout.workout_triceps_fekvotamasz);
+                currentLayoutId = R.layout.workout_triceps_fekvotamasz;
         });
 
     }

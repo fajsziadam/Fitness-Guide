@@ -10,7 +10,7 @@ import android.view.WindowManager;
 import com.example.fitnessguide.R;
 
 public class WorkoutBiceps extends AppCompatActivity {
-    private CardView biceps1,biceps2,biceps3,biceps4;
+    private CardView biceps1,biceps2,biceps3;
     private int currentLayoutId;
 
     @Override
@@ -23,20 +23,16 @@ public class WorkoutBiceps extends AppCompatActivity {
         showButtons();
 
         biceps1.setOnClickListener(v -> {
-                setContentView(R.layout.workout_biceps1);
-                currentLayoutId = R.layout.workout_biceps1;
+                setContentView(R.layout.workout_biceps_huzodzkodas);
+                currentLayoutId = R.layout.workout_biceps_huzodzkodas;
         });
         biceps2.setOnClickListener(v -> {
-                setContentView(R.layout.workout_biceps2);
-                currentLayoutId = R.layout.workout_biceps2;
+                setContentView(R.layout.workout_biceps_dontotttorzsuevezes);
+                currentLayoutId = R.layout.workout_biceps_dontotttorzsuevezes;
         });
         biceps3.setOnClickListener(v -> {
-                setContentView(R.layout.workout_biceps3);
-                currentLayoutId = R.layout.workout_biceps3;
-        });
-        biceps4.setOnClickListener(v -> {
-                setContentView(R.layout.workout_biceps4);
-                currentLayoutId = R.layout.workout_biceps4;
+                setContentView(R.layout.workout_biceps_forditotttenyerfekvo);
+                currentLayoutId = R.layout.workout_biceps_forditotttenyerfekvo;
         });
 
     }
@@ -57,6 +53,5 @@ public class WorkoutBiceps extends AppCompatActivity {
         biceps1 = findViewById(R.id.biceps1);
         biceps2 = findViewById(R.id.biceps2);
         biceps3 = findViewById(R.id.biceps3);
-        biceps4 = findViewById(R.id.biceps4);
     }
 }

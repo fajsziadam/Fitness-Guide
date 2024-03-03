@@ -48,7 +48,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
-                        android:text="Felülés súlyzóval "
+                        android:text="Felülés"
                         android:textColor="@color/white"
                         android:textSize="18dp" />
 
@@ -83,7 +83,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
-                        android:text="Russain twist"
+                        android:text="Lábemelés"
                         android:textColor="@color/white"
                         android:textSize="18dp" />
                 </LinearLayout>
@@ -117,7 +117,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
-                        android:text="Dumbbell Side\nBridge"
+                        android:text="Hasprés"
                         android:textColor="@color/white"
                         android:textSize="18dp" />
                 </LinearLayout>
@@ -151,7 +151,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
-                        android:text="Súlyzós\noldalhajlítás"
+                        android:text="Plank"
                         android:textColor="@color/white"
                         android:textSize="18dp" />
                 </LinearLayout>

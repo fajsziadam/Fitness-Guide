@@ -23,20 +23,20 @@ public class WorkoutChest extends AppCompatActivity {
         showButtons();
 
         chest1.setOnClickListener(v -> {
-                setContentView(R.layout.workout_chest1);
-                currentLayoutId = R.layout.workout_chest1;
+                setContentView(R.layout.workout_chest_fekvotamasz);
+                currentLayoutId = R.layout.workout_chest_fekvotamasz;
         });
         chest2.setOnClickListener(v -> {
-                setContentView(R.layout.workout_chest2);
-                currentLayoutId = R.layout.workout_chest2;
+                setContentView(R.layout.workout_chest_fekvotamaszemeltlabakkal);
+                currentLayoutId = R.layout.workout_chest_fekvotamaszemeltlabakkal;
         });
         chest3.setOnClickListener(v -> {
-                setContentView(R.layout.workout_chest3);
-                currentLayoutId = R.layout.workout_chest3;
+                setContentView(R.layout.workout_chest_szelesfekvo);
+                currentLayoutId = R.layout.workout_chest_szelesfekvo;
         });
         chest4.setOnClickListener(v -> {
-                setContentView(R.layout.workout_chest4);
-                currentLayoutId = R.layout.workout_chest4;
+                setContentView(R.layout.workout_chest_tolodzkodas);
+                currentLayoutId = R.layout.workout_chest_tolodzkodas;
         });
 
     }
@@ -52,7 +52,6 @@ public class WorkoutChest extends AppCompatActivity {
             super.onBackPressed();
         }
     }
-
     private void showButtons() {
         chest1 = findViewById(R.id.chest1);
         chest2 = findViewById(R.id.chest2);

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Széles fekvőtámasz"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="286dp"
+            android:src="@drawable/my_gif" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/workoutchest_szelesfekvo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="30dp"
+            android:text="1. Először menj le négykézláb, támaszod vállszélességnél szélesebb legyen. Nyújtsd ki a lábad úgy, hogy egyenes vonalat képezzen a hátaddal. Emeld fel a tested úgy, hogy csak a tenyered és lábujjaid legyenek a padlón.
+\n\n2. Belégzés közben lassan hajlítsd be a könyöködet, és ereszkedj le a padlóra, amíg a könyökeid el nem érik a 90 fokos szöget.
+\n\n3. Kilégzés közben told vissza magad, amíg a karjaid egyenesek nem lesznek.
+\n\n4. Hajtsd végre a gyakorlatot 10-15 ismétlésszámmal.
+"
+            />
+
+
+    </LinearLayout>
+</ScrollView>

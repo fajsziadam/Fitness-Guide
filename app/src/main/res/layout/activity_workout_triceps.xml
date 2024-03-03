@@ -48,7 +48,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
-                        android:text="Csigás letolás\n tricepsz kötéllel"
+                        android:text="Tolódzkodás"
                         android:textColor="@color/white"
                         android:textSize="18dp" />
                 </LinearLayout>
@@ -82,7 +82,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
-                        android:text="Csigás\n letolás rúddal "
+                        android:text="Szűk\nfekvőtámasz"
                         android:textColor="@color/white"
                         android:textSize="18dp" />
                 </LinearLayout>
@@ -116,7 +116,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
-                        android:text="Egykezes\ntricepsznyújtás\nfekve"
+                        android:text="Hátsó\ntolódzkodás"
                         android:textColor="@color/white"
                         android:textSize="18dp" />
                 </LinearLayout>
@@ -150,7 +150,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
-                        android:text="Tricepsznyújtás\n állva"
+                        android:text="Fekvőtámasz"
                         android:textColor="@color/white"
                         android:textSize="18dp" />
                 </LinearLayout>
