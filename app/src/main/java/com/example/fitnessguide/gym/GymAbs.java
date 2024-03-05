@@ -12,7 +12,6 @@ import com.example.fitnessguide.R;
 public class GymAbs extends AppCompatActivity {
     private CardView abs1,abs2,abs3,abs4;
     private int currentLayoutId;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

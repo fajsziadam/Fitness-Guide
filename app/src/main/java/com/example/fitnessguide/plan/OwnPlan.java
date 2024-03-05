@@ -15,7 +15,6 @@ import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.firebase.firestore.Query;
 
 public class OwnPlan extends AppCompatActivity {
-
     Button addNewnotebtn;
     RecyclerView recyclerView;
     NoteAdapter noteAdapter;

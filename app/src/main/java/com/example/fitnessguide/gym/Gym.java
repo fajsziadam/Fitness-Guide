@@ -11,7 +11,6 @@ import com.example.fitnessguide.R;
 
 public class Gym extends AppCompatActivity {
         private ImageButton btnChestGym, btnShoulderGym, btnBicepsGym, btnTricepsGym, btnBackGym, btnAbsGym, btnLegGym;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
