@@ -66,6 +66,7 @@ public class CaloriaCalculator extends AppCompatActivity {
             Calories = (10 * weightValue) + (6.25 * heightValue) - (5 * ageValue) + 5;
 
             if (rgActivity.getCheckedRadioButtonId() == rb0.getId()){
+                Calories = Calories * 1.2;
                 if (rgGoal.getCheckedRadioButtonId() == rbSame.getId()) {
                 }
                 if (rgGoal.getCheckedRadioButtonId() == rbLess.getId()){
@@ -114,6 +115,7 @@ public class CaloriaCalculator extends AppCompatActivity {
 
             // Setting the text to the calories text view
             txtShow.setText(String.format("A napi kalória szükségleted: " + "%.2f" , Calories) + " Kalória.");
+            txtKeplet.setVisibility(View.VISIBLE);
             txtKeplet.setText(String.format("*A számítás a Mifflin-St. Jeor egyenlet alapján történik."));
 
         } if (rgGender.getCheckedRadioButtonId() == rbFemale.getId()){
@@ -121,6 +123,7 @@ public class CaloriaCalculator extends AppCompatActivity {
             Calories = (10 * weightValue) + (6.25 * heightValue) - (5 * ageValue) - 161 ;
 
             if (rgActivity.getCheckedRadioButtonId() == rb0.getId()){
+                Calories = Calories * 1.2;
                 if (rgGoal.getCheckedRadioButtonId() == rbSame.getId()) {
                 }
                 if (rgGoal.getCheckedRadioButtonId() == rbLess.getId()){
@@ -132,7 +135,7 @@ public class CaloriaCalculator extends AppCompatActivity {
             }
 
             if (rgActivity.getCheckedRadioButtonId() == rb12.getId()){
-                Calories = Calories * 1.149;
+                Calories = Calories * 1.375;
                 if (rgGoal.getCheckedRadioButtonId() == rbSame.getId()) {
                 }
                 if (rgGoal.getCheckedRadioButtonId() == rbLess.getId()){
@@ -144,7 +147,7 @@ public class CaloriaCalculator extends AppCompatActivity {
             }
 
             if (rgActivity.getCheckedRadioButtonId() == rb35.getId()){
-                Calories = Calories * 1.292;
+                Calories = Calories * 1.55;
                 if (rgGoal.getCheckedRadioButtonId() == rbSame.getId()) {
                 }
                 if (rgGoal.getCheckedRadioButtonId() == rbLess.getId()){
@@ -156,7 +159,7 @@ public class CaloriaCalculator extends AppCompatActivity {
             }
 
             if (rgActivity.getCheckedRadioButtonId() == rb67.getId()){
-                Calories = Calories * 1.583;
+                Calories = Calories * 1.725;
                 if (rgGoal.getCheckedRadioButtonId() == rbSame.getId()) {
                 }
                 if (rgGoal.getCheckedRadioButtonId() == rbLess.getId()){
@@ -167,14 +170,14 @@ public class CaloriaCalculator extends AppCompatActivity {
                 }
             }
 
-            txtShow.setText(String.format("A napi kalória szükségleted: " + "%.2f" , Calories) + " Kalória.");
+            txtShow.setText(String.format("A napi kalória szükségleted: " + "%.2f" , Calories) + " Kalória.\n\n");
+            txtKeplet.setVisibility(View.VISIBLE);
             txtKeplet.setText(String.format("*A számítás a Mifflin-St. Jeor egyenlet alapján történik."));
         }
 
 
     }
-    }
-
+}
     private boolean validateData(){
         if (edtTxtAge.getText().toString().equals("")){
             txtWarnAge.setVisibility(View.VISIBLE);
@@ -234,7 +237,6 @@ public class CaloriaCalculator extends AppCompatActivity {
     }
 
     private void initViews(){
-
 
         edtTxtAge = findViewById(R.id.edtTxtAge);
         edtTxtHeight = findViewById(R.id.edtTxtHeight);
