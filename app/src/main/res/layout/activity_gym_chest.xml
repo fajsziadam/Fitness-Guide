@@ -41,7 +41,7 @@
                     <ImageView
                         android:layout_width="135dp"
                         android:layout_height="85dp"
-                        android:src="@drawable/my_gif"/>
+                        android:src="@drawable/giff_chest_fekvenyomas"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -76,7 +76,7 @@
                     <ImageView
                         android:layout_width="135dp"
                         android:layout_height="85dp"
-                        android:src="@drawable/my_gif"/>
+                        android:src="@drawable/giff_chest_fekvenyomas_egykezessel"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -110,7 +110,7 @@
                     <ImageView
                         android:layout_width="135dp"
                         android:layout_height="85dp"
-                        android:src="@drawable/my_gif"/>
+                        android:src="@drawable/giff_chest_fekvenyomas_ferdepad"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -144,7 +144,7 @@
                     <ImageView
                         android:layout_width="135dp"
                         android:layout_height="85dp"
-                        android:src="@drawable/my_gif"/>
+                        android:src="@drawable/giff_chest_tarogatas"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -178,7 +178,7 @@
                     <ImageView
                         android:layout_width="135dp"
                         android:layout_height="85dp"
-                        android:src="@drawable/my_gif"/>
+                        android:src="@drawable/giff_chest_peckdeck"/>
 
                     <TextView
                         android:layout_width="wrap_content"

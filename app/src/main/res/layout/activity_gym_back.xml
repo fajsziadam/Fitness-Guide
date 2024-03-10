@@ -40,8 +40,8 @@
 
                     <ImageView
                         android:layout_width="135dp"
-                        android:layout_height="85dp"
-                        android:src="@drawable/my_gif"/>
+                        android:layout_height="110dp"
+                        android:src="@drawable/giff_back_mellhezhuzas"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -75,8 +75,8 @@
 
                     <ImageView
                         android:layout_width="135dp"
-                        android:layout_height="85dp"
-                        android:src="@drawable/my_gif"/>
+                        android:layout_height="110dp"
+                        android:src="@drawable/giff_back_trudas"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -109,8 +109,8 @@
 
                     <ImageView
                         android:layout_width="135dp"
-                        android:layout_height="85dp"
-                        android:src="@drawable/my_gif"/>
+                        android:layout_height="110dp"
+                        android:src="@drawable/giff_back_evezes"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -143,8 +143,8 @@
 
                     <ImageView
                         android:layout_width="135dp"
-                        android:layout_height="85dp"
-                        android:src="@drawable/my_gif"/>
+                        android:layout_height="110dp"
+                        android:src="@drawable/giff_back_fureszeles"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -177,8 +177,8 @@
 
                     <ImageView
                         android:layout_width="135dp"
-                        android:layout_height="85dp"
-                        android:src="@drawable/my_gif"/>
+                        android:layout_height="110dp"
+                        android:src="@drawable/giff_back_vallvonogatas"/>
 
                     <TextView
                         android:layout_width="wrap_content"
