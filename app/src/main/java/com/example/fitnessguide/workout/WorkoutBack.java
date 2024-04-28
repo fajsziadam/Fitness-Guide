@@ -36,7 +36,6 @@ public class WorkoutBack extends AppCompatActivity {
         });
 
     }
-
     @Override
     public void onBackPressed() {
         if (currentLayoutId != R.layout.activity_workout_back) {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,10 +8,15 @@
     android:background="@drawable/hatter"
     tools:context=".gym.GymBack">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <GridLayout
             android:layout_width="match_parent"
@@ -39,9 +44,9 @@
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="135dp"
-                        android:layout_height="110dp"
-                        android:src="@drawable/giff_back_mellhezhuzas"/>
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:src="@drawable/giff_back_mellhezhuzas" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -74,9 +79,9 @@
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="135dp"
-                        android:layout_height="110dp"
-                        android:src="@drawable/giff_back_trudas"/>
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:src="@drawable/giff_back_trudas" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -108,9 +113,9 @@
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="135dp"
-                        android:layout_height="110dp"
-                        android:src="@drawable/giff_back_evezes"/>
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:src="@drawable/giff_back_evezes" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -142,9 +147,9 @@
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="135dp"
-                        android:layout_height="110dp"
-                        android:src="@drawable/giff_back_fureszeles"/>
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:src="@drawable/giff_back_fureszeles" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -176,9 +181,9 @@
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="135dp"
-                        android:layout_height="110dp"
-                        android:src="@drawable/giff_back_vallvonogatas"/>
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:src="@drawable/giff_back_vallvonogatas" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -194,6 +199,6 @@
 
         </GridLayout>
 
-    </LinearLayout>
+    </ScrollView>
 
-</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

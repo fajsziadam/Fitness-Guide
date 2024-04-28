@@ -42,7 +42,6 @@ public class NoteDeatails extends AppCompatActivity {
 
         deletePlanTextViewBtn = findViewById(R.id.deletePlanTextViewBtn);
 
-        //recive data
         title = getIntent().getStringExtra("title");
         muscle = getIntent().getStringExtra("muscle");
         excercises = getIntent().getStringExtra("excercises");
@@ -95,10 +94,8 @@ public class NoteDeatails extends AppCompatActivity {
     public void saveNoteToFirebase(Note note){
         DocumentReference documentReference;
         if(isEditMode){
-            //update the note
             documentReference = Utility.getCollectionReferenceForNotes().document(docId);
         }else {
-            //create new note
             documentReference = Utility.getCollectionReferenceForNotes().document();
         }
         documentReference.set(note).addOnCompleteListener(new OnCompleteListener<Void>() {

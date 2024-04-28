@@ -50,7 +50,6 @@ public class RegisterActivity extends AppCompatActivity {
         String password = edtTxtPassword.getText().toString();
         String password2 = edtTxtPassword2.getText().toString();
 
-        //Ellenőrizzük, hogy helyes e az email:
         if (!email.matches(emailPattern)){
             edtTxtEmail.setError("Adj meg egy érvényes e-mail-címet.");
         } else if (password.isEmpty() || password.length() < 6) {
@@ -91,7 +90,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     private void sendUserToNextActivity(){
         Intent intent =new Intent(RegisterActivity.this, ChoseTrainingStyle.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);     //Ha sikeresen regisztráltunk akkor nem tudunk visszajönni ide
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
         finish();
     }

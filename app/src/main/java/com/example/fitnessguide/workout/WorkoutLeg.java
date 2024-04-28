@@ -10,7 +10,7 @@ import android.view.WindowManager;
 import com.example.fitnessguide.R;
 
 public class WorkoutLeg extends AppCompatActivity {
-    private CardView leg1,leg2,leg3,leg4;
+    private CardView leg1,leg2,leg3;
     private int currentLayoutId;
 
     @Override
@@ -31,10 +31,6 @@ public class WorkoutLeg extends AppCompatActivity {
                 currentLayoutId = R.layout.workout_leg_kitores;
         });
         leg3.setOnClickListener(v -> {
-                setContentView(R.layout.workout_leg_oldalraguggolas);
-                currentLayoutId = R.layout.workout_leg_oldalraguggolas;
-        });
-        leg4.setOnClickListener(v -> {
                 setContentView(R.layout.workout_leg_allovadli);
                 currentLayoutId = R.layout.workout_leg_allovadli;
         });
@@ -57,6 +53,5 @@ public class WorkoutLeg extends AppCompatActivity {
         leg1 = findViewById(R.id.leg1);
         leg2 = findViewById(R.id.leg2);
         leg3 = findViewById(R.id.leg3);
-        leg4 = findViewById(R.id.leg4);
     }
 }

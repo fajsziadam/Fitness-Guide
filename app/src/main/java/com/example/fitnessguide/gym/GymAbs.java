@@ -10,7 +10,7 @@ import android.view.WindowManager;
 import com.example.fitnessguide.R;
 
 public class GymAbs extends AppCompatActivity {
-    private CardView abs1,abs2,abs3,abs4;
+    private CardView abs1,abs2,abs3;
     private int currentLayoutId;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,10 +30,6 @@ public class GymAbs extends AppCompatActivity {
                 currentLayoutId = R.layout.gym_abs_russain;
         });
         abs3.setOnClickListener(v -> {
-                setContentView(R.layout.gym_abs_dumbellside);
-                currentLayoutId = R.layout.gym_abs_dumbellside;
-        });
-        abs4.setOnClickListener(v -> {
                 setContentView(R.layout.gym_abs_oldalrahajlitas);
                 currentLayoutId = R.layout.gym_abs_oldalrahajlitas;
         });
@@ -56,6 +52,5 @@ public class GymAbs extends AppCompatActivity {
         abs1 = findViewById(R.id.abs1);
         abs2 = findViewById(R.id.abs2);
         abs3 = findViewById(R.id.abs3);
-        abs4 = findViewById(R.id.abs4);
     }
 }

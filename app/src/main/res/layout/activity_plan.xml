@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
     android:background="@drawable/hatter"
     tools:context=".plan.Plan">
@@ -73,12 +74,20 @@
                     android:background="@drawable/input_bg"
                     android:backgroundTint="@color/cardview_dark_background"/>
 
-                <ImageView
+                <com.jsibbold.zoomage.ZoomageView
                     android:id="@+id/plan5DayGym"
                     android:layout_width="wrap_content"
                     android:layout_height="280dp"
                     android:src="@drawable/plan_gym5napos"
-                    android:visibility="gone"/>
+                    android:visibility="gone"
+                    app:zoomage_restrictBounds="false"
+                    app:zoomage_animateOnReset="true"
+                    app:zoomage_autoResetMode="UNDER"
+                    app:zoomage_autoCenter="true"
+                    app:zoomage_zoomable="true"
+                    app:zoomage_translatable="true"
+                    app:zoomage_minScale="0.6"
+                    app:zoomage_maxScale="8"/>
 
                 <Button
                     android:id="@+id/btn3DayGym"
@@ -93,12 +102,20 @@
                     android:background="@drawable/input_bg"
                     android:backgroundTint="@color/cardview_dark_background"/>
 
-                <ImageView
+                <com.jsibbold.zoomage.ZoomageView
                     android:id="@+id/plan3DayGym"
                     android:layout_width="wrap_content"
                     android:layout_height="260dp"
                     android:src="@drawable/plan_gym3napos"
-                    android:visibility="gone"/>
+                    android:visibility="gone"
+                    app:zoomage_restrictBounds="false"
+                    app:zoomage_animateOnReset="true"
+                    app:zoomage_autoResetMode="UNDER"
+                    app:zoomage_autoCenter="true"
+                    app:zoomage_zoomable="true"
+                    app:zoomage_translatable="true"
+                    app:zoomage_minScale="0.6"
+                    app:zoomage_maxScale="8"/>
 
             </LinearLayout>
 
@@ -136,12 +153,20 @@
                     android:gravity="center"
                     android:background="@drawable/input_bg" />
 
-                <ImageView
+                <com.jsibbold.zoomage.ZoomageView
                     android:id="@+id/planAllDayWorkout"
                     android:layout_width="wrap_content"
                     android:layout_height="170dp"
                     android:src="@drawable/plan_workoutmindennapos"
-                    android:visibility="gone"/>
+                    android:visibility="gone"
+                    app:zoomage_restrictBounds="false"
+                    app:zoomage_animateOnReset="true"
+                    app:zoomage_autoResetMode="UNDER"
+                    app:zoomage_autoCenter="true"
+                    app:zoomage_zoomable="true"
+                    app:zoomage_translatable="true"
+                    app:zoomage_minScale="0.6"
+                    app:zoomage_maxScale="8"/>
 
                 <Button
                     android:id="@+id/btn2DayWorkout"
@@ -156,13 +181,21 @@
                     android:background="@drawable/input_bg"
                     android:backgroundTint="@color/cardview_dark_background"/>
 
-                <ImageView
+                <com.jsibbold.zoomage.ZoomageView
                     android:id="@+id/plan2DayWorkout"
                     android:layout_width="wrap_content"
                     android:layout_height="220dp"
                     android:src="@drawable/plan_workout2napos"
                     android:visibility="gone"
-                    android:layout_marginBottom="25dp"/>
+                    android:layout_marginBottom="25dp"
+                    app:zoomage_restrictBounds="false"
+                    app:zoomage_animateOnReset="true"
+                    app:zoomage_autoResetMode="UNDER"
+                    app:zoomage_autoCenter="true"
+                    app:zoomage_zoomable="true"
+                    app:zoomage_translatable="true"
+                    app:zoomage_minScale="0.6"
+                    app:zoomage_maxScale="8"/>
 
             </LinearLayout>
 

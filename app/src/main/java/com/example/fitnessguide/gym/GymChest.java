@@ -48,8 +48,8 @@ public class GymChest extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         if (currentLayoutId != R.layout.activity_gym_chest) {
-            Intent chest = new Intent(GymChest.this, GymChest.class);//Azért kellett ez a megoldás mert nem az edzésekhez,
-            currentLayoutId = R.layout.activity_gym_chest;                         //hanem az izomcsoportokhoz ment vissza a vissza gombbal
+            Intent chest = new Intent(GymChest.this, GymChest.class);
+            currentLayoutId = R.layout.activity_gym_chest;
             startActivity(chest);
             finish();
         } else {

@@ -10,7 +10,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.FitnessGuide"
+        android:forceDarkAllowed="true"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
         tools:targetApi="31">
         <activity
             android:name=".plan.NoteDeatails"
@@ -27,8 +28,7 @@
             android:exported="false"
             android:label="Információ"
             android:parentActivityName=".ChoseTrainingStyle"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.DayNight" />
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Login"
             android:exported="false"
@@ -43,13 +43,12 @@
             android:exported="false"
             android:label="Tricepsz gyakorlatok"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.DayNight" />
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
         <activity
             android:name=".workout.WorkoutShoulder"
             android:exported="false"
             android:label="Vállizom gyakorlatok"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.DayNight" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".workout.WorkoutLeg"
             android:exported="false"

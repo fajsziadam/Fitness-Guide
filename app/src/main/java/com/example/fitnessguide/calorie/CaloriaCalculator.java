@@ -62,7 +62,6 @@ public class CaloriaCalculator extends AppCompatActivity {
         double Calories;
 
         if(rgGender.getCheckedRadioButtonId() == rbMale.getId()){
-            // If user is "Male" then the following formula will be used to calculate the calories
             Calories = (10 * weightValue) + (6.25 * heightValue) - (5 * ageValue) + 5;
 
             if (rgActivity.getCheckedRadioButtonId() == rb0.getId()){
@@ -113,13 +112,11 @@ public class CaloriaCalculator extends AppCompatActivity {
                 }
             }
 
-            // Setting the text to the calories text view
             txtShow.setText(String.format("A napi kalória szükségleted: " + "%.2f" , Calories) + " Kalória.");
             txtKeplet.setVisibility(View.VISIBLE);
             txtKeplet.setText(String.format("*A számítás a Mifflin-St. Jeor egyenlet alapján történik."));
 
         } if (rgGender.getCheckedRadioButtonId() == rbFemale.getId()){
-            // If user is "Female" then the following formula will be used to calculate the calories
             Calories = (10 * weightValue) + (6.25 * heightValue) - (5 * ageValue) - 161 ;
 
             if (rgActivity.getCheckedRadioButtonId() == rb0.getId()){

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,10 +8,15 @@
     android:background="@drawable/hatter"
     tools:context=".gym.GymLeg">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <GridLayout
             android:layout_width="match_parent"
@@ -39,16 +44,16 @@
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="135dp"
-                        android:layout_height="110dp"
-                        android:src="@drawable/giff_leg_guggolas"/>
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:src="@drawable/giff_leg_guggolas" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:text="Guggolás"
                         android:gravity="center"
+                        android:text="Guggolás"
                         android:textColor="@color/white"
                         android:textSize="18dp" />
                 </LinearLayout>
@@ -73,16 +78,16 @@
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="135dp"
-                        android:layout_height="110dp"
-                        android:src="@drawable/giff_leg_labtolo"/>
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:src="@drawable/giff_leg_labtolo" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:text="Lábtolás"
                         android:gravity="center"
+                        android:text="Lábtolás"
                         android:textColor="@color/white"
                         android:textSize="18dp" />
                 </LinearLayout>
@@ -107,16 +112,16 @@
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="135dp"
-                        android:layout_height="110dp"
-                        android:src="@drawable/giff_leg_labtolo"/>
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:src="@drawable/giff_leg_labtolo" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:text="Lábnyújtás gépen"
                         android:gravity="center"
+                        android:text="Lábnyújtás gépen"
                         android:textColor="@color/white"
                         android:textSize="18dp" />
                 </LinearLayout>
@@ -141,16 +146,16 @@
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="135dp"
-                        android:layout_height="110dp"
-                        android:src="@drawable/giff_leg_vadli"/>
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:src="@drawable/giff_leg_vadli" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:text="Álló vádligép"
                         android:gravity="center"
+                        android:text="Álló vádligép"
                         android:textColor="@color/white"
                         android:textSize="18dp" />
                 </LinearLayout>
@@ -159,6 +164,6 @@
 
         </GridLayout>
 
-    </LinearLayout>
+    </ScrollView>
 
-</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

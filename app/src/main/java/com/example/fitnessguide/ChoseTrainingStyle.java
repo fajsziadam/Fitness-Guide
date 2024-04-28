@@ -1,6 +1,8 @@
 package com.example.fitnessguide;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -24,6 +26,11 @@ import com.example.fitnessguide.plan.Plan;
 import com.example.fitnessguide.workout.Workout;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class ChoseTrainingStyle extends AppCompatActivity {
     private FirebaseAuth mAuth;
@@ -40,6 +47,7 @@ public class ChoseTrainingStyle extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chose_training_style);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
 
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser firebaseUser = mAuth.getCurrentUser();
@@ -123,6 +131,36 @@ public class ChoseTrainingStyle extends AppCompatActivity {
                 float rating = ratingBar.getRating();
                 String message = "Értékelésed: " + rating + "/5.\nKöszönjük az értékelésed!";
                 Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+
+
+                FirebaseUser currentUser = mAuth.getCurrentUser();
+                if (currentUser != null) {
+                    DatabaseReference ratingsRef = FirebaseDatabase.getInstance().getReference().child("ratings").child(currentUser.getUid());
+                    ratingsRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            if (dataSnapshot.exists()) {
+                                ratingsRef.setValue(rating).addOnSuccessListener(aVoid -> {
+                                    Toast.makeText(ChoseTrainingStyle.this, "Értékelés sikeresen frissítve", Toast.LENGTH_SHORT).show();
+                                }).addOnFailureListener(e -> {
+                                    Toast.makeText(ChoseTrainingStyle.this, "Hiba történt az értékelés frissítése közben", Toast.LENGTH_SHORT).show();
+                                });
+                            } else {
+                                ratingsRef.setValue(rating).addOnSuccessListener(aVoid -> {
+                                    Toast.makeText(ChoseTrainingStyle.this, "Értékelés sikeresen mentve", Toast.LENGTH_SHORT).show();
+                                }).addOnFailureListener(e -> {
+                                    Toast.makeText(ChoseTrainingStyle.this, "Hiba történt az értékelés mentése közben", Toast.LENGTH_SHORT).show();
+                                });
+                            }
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+
+                }
                 dialog.dismiss();
             });
 

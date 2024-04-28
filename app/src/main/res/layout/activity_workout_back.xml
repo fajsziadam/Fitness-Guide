@@ -41,7 +41,7 @@
                     <ImageView
                         android:layout_width="135dp"
                         android:layout_height="85dp"
-                        android:src="@drawable/my_gif"/>
+                        android:src="@drawable/gif_workout_hat_huzodzkodas"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -76,7 +76,7 @@
                     <ImageView
                         android:layout_width="135dp"
                         android:layout_height="85dp"
-                        android:src="@drawable/my_gif"/>
+                        android:src="@drawable/gif_workout_hat_dontotttorzsu"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -110,7 +110,7 @@
                     <ImageView
                         android:layout_width="135dp"
                         android:layout_height="85dp"
-                        android:src="@drawable/my_gif"/>
+                        android:src="@drawable/workout_fekvo"/>
 
                     <TextView
                         android:layout_width="wrap_content"

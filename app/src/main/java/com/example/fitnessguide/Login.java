@@ -16,7 +16,6 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,7 +28,6 @@ import com.google.firebase.auth.FirebaseUser;
 public class Login extends AppCompatActivity {
     private Button btnLogin;
     private TextView createNewAccount, forgottPassword;
-    private ImageView btnGoogle;
     EditText edtTxtEmail,edtTxtPassword;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     ProgressDialog progressDialog;
@@ -48,8 +46,6 @@ public class Login extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         mUser = mAuth.getCurrentUser();
 
-        //onclick metódus létrehozása --> Ha megnyomjuk a gombot, akkor végrehajtja a parancsot
-        //Intent-el tudjuk egy activityről a másikra átállítani
 
         btnLogin.setOnClickListener(v -> PerforLogin());
 
@@ -108,7 +104,6 @@ public class Login extends AppCompatActivity {
         String email = edtTxtEmail.getText().toString();
         String password = edtTxtPassword.getText().toString();
 
-        //Ellenőrizzük, hogy helyes e az email:
         if (!email.matches(emailPattern)){
             edtTxtEmail.setError("Adj meg egy érvényes e-mail-címet.");
         } else if (password.isEmpty() || password.length() < 6) {
@@ -145,7 +140,7 @@ public class Login extends AppCompatActivity {
     }
     private void sendUserToNextActivity(){
         Intent intent =new Intent(Login.this, ChoseTrainingStyle.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);     //Ha sikeresen regisztráltunk akkor nem tudunk visszajönni ide
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
 

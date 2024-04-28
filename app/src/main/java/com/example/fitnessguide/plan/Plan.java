@@ -36,12 +36,9 @@ public class Plan extends AppCompatActivity {
 
         ownPlan = findViewById(R.id.ownPlan);
 
-
-        //Gym plans:
         btn3DayGym.setOnClickListener(v -> is_visible(plan3DayGym));
         btn5DayGym.setOnClickListener(v -> is_visible(plan5DayGym));
 
-        //Workout plans:
         btn2DayWorkout.setOnClickListener(v -> is_visible(plan2DayWorkout));
         btnAllDayWorkout.setOnClickListener(v -> is_visible(planAllDayWorkout));
 
